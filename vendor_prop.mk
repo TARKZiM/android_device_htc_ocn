@@ -132,7 +132,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #13631487 is decimal sum of supported codecs in AAL
 #codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true \
     media.stagefright.enable-aac=true \
     media.stagefright.enable-http=true \
     media.stagefright.enable-player=true \

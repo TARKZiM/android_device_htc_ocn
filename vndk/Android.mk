@@ -1,3 +1,5 @@
+ifeq ($(BOARD_VNDK_VERSION),)
+$(warning ************* BOARD VNDK is not enabled - compiling vndk-sp ***************************)
 LOCAL_PATH := $(call my-dir)
 
 # b/69526027: This VNDK-SP install routine must be removed. Instead, we must
@@ -10,7 +12,7 @@ ifndef BOARD_VNDK_VERSION
 # However, some of those libs need FWK-ONLY libs, which must be listed here
 # manually.
 VNDK_SP_LIBRARIES := \
-    libdexfile_support \
+    libdexfile_support
 
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
@@ -70,5 +72,5 @@ include $(BUILD_PHONY_PACKAGE)
 
 install_in_hw_dir :=
 vndk_sp_dir :=
-
+endif
 endif

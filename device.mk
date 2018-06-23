@@ -212,7 +212,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-impl \
     vendor.display.config@2.0 \
     vendor.display.config@2.0_vendor \
-    copybit.msm8998 \
     gralloc.msm8998 \
     hwcomposer.msm8998 \
     libhwc2on1adapter \

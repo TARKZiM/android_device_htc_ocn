@@ -396,6 +396,8 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2 \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     telephony-ext

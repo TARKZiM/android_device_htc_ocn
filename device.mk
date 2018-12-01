@@ -278,8 +278,7 @@ PRODUCT_PACKAGES += \
 # IMS
 PRODUCT_PACKAGES += \
     libims_shim \
-    libbase_shim \
-    com.android.ims.rcsmanager
+    libbase_shim
 
 # Init
 PRODUCT_PACKAGES += \
@@ -403,6 +402,12 @@ include $(LOCAL_PATH)/vendor_prop.mk
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # RIL
 PRODUCT_PACKAGES += \

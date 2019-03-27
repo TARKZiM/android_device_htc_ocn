@@ -148,7 +148,7 @@ void vendor_load_properties()
          */
     } else if (bootmid == "2PZC30000") {
         property_override_dual("ro.product.device", "ro.vendor.product.device", "htc_ocndugl");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "HTC_U-3u");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "HTC U11");
         if (bootcid == "HTC__060") {
             //property_override_dual("ro.product.name", "ro.vendor.product.name", "");
            // property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "");

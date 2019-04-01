@@ -27,6 +27,10 @@
 # Debug
 /sys/kernel/debug/rmt_storage(/.*)?                                           u:object_r:qti_debugfs:s0
 
+# DRM
+/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey u:object_r:hal_drm_clearkey_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@1\.0-service\.widevine u:object_r:hal_drm_widevine_exec:s0
+
 # Firmware
 /firmware/image/(/.*)?	                                                      u:object_r:firmware_file:s0
 /firmware(/.*)?                                                               u:object_r:firmware_file:s0

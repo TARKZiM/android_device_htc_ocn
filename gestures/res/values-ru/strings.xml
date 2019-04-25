@@ -33,16 +33,6 @@
     <string name="squeeze_enabled_summary">Выполнить различные действия, используя жесты сжатия</string>
     <string name="squeeze_short_title">Короткий жест сжатия</string>
     <string name="squeeze_long_title">Длинный жест сжатия</string>
-    <string name="squeeze_gestures_enabled">Жесты сжатия включены</string>
-    <string name="squeeze_gestures_disabled">Жесты сжатия выключены</string>
-    <string name="squeeze_long_activation_time">Время срабатывания длинного жеста</string>
-    <string name="squeeze_force_title">Время срабатывания жеста</string>
-    <string name="squeeze_force_summary">Регулировать силу сжатия</string>
-    <string name="squeeze_advanced_settings_title">Дополнительно</string>
-    <string name="squeeze_haptic_ignore_ringer_title">Тактильная обратная связь игнорирует режим звонка</string>
-    <string name="squeeze_haptic_ignore_ringer_summary">Вибрация даже в режиме Не беспокоить</string>
-    <string name="squeeze_gestures_activated">Вибрация, когда жест сжатия активирован</string>
-    <string name="squeeze_gestures_screen_off_activated">Вибрация, когда жест сжатия при выкл. экране активирован</string>
 
     <!-- Action Strings -->
     <string name="action_dialog_title">Жест действия</string>

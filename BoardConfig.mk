@@ -213,9 +213,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 # LLVM
 TARGET_USE_SDCLANG := true
 
-# Lineage Hardware
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 

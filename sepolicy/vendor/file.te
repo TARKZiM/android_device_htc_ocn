@@ -8,3 +8,6 @@ type sensors_cal_file, file_type;
 type time_data_file, file_type, data_file_type;
 
 type thermal_data_file, data_file_type, file_type;
+
+# Glove mode
+type sysfs_glove_mode, sysfs_type, fs_type;

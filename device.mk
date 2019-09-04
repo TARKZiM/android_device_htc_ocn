@@ -381,6 +381,10 @@ PRODUCT_COPY_FILES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    device/htc/ocn
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1

@@ -199,6 +199,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.baseband.arch=msm
 
+# QCOM
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.va_aosp.support=1
+
+PRODUCT_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
+
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.agg.dl_pkt=10 \

@@ -208,6 +208,9 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
     start vendor.ims_rtp_daemon
     start vendor.imsrcsservice
 
+on property:apexd.status=ready
+    symlink /system/lib64/libashmemd_client.so /system/apex/com.android.media.swcodec/lib64/libashmemd_client.so
+
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
    class main
    user root

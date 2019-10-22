@@ -159,6 +159,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.radio.ROTATION_ENABLE=1 \
     persist.radio.RATE_ADAPT_ENABLE=1 \
     persist.radio.VT_ENABLE=1 \

@@ -52,6 +52,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true \
     ro.af.client_heap_size_kbyte=7168
 
+# FM
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.fm.use_audio_session=true
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \

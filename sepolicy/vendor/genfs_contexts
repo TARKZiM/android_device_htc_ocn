@@ -13,8 +13,8 @@ genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:
 genfscon sysfs /devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/main u:object_r:sysfs_battery_supply:s0
 
 genfscon sysfs /devices/soc/ca1c000.qcom,jpeg u:object_r:sysfs_jpeg:s0
-genfscon sysfs /devices/soc/caa0000.qcom,jpeg u:object_r:sysfs_jpeg:s0
-genfscon sysfs /devices/soc/8c0000.qcom,msm-cam u:object_r:sysfs_graphics:s0
+#genfscon sysfs /devices/soc/caa0000.qcom,jpeg u:object_r:sysfs_jpeg:s0
+#genfscon sysfs /devices/soc/8c0000.qcom,msm-cam u:object_r:sysfs_graphics:s0
 genfscon sysfs /android_camera/sensor u:object_r:sysfs_graphics:s0
 genfscon sysfs /android_camera2/sensor u:object_r:sysfs_graphics:s0
 genfscon sysfs /android_camera_awb_cal/awb_cal u:object_r:sysfs_graphics:s0

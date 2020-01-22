@@ -86,4 +86,4 @@
 /sys/devices/soc/780000.qcom,msm-core/uio/uio2(/.*)?			      u:object_r:sysfs_uio_file:s0
 
 # vendor
-/vendor/bin/tftp_server                                                       u:object_r:rfs_access_exec:s0
+#/vendor/bin/tftp_server                                                       u:object_r:rfs_access_exec:s0

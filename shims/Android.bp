@@ -1,0 +1,13 @@
+cc_library_shared {
+
+    srcs: ["drm_shim.cpp"],
+
+    shared_libs: [
+        "libbase",
+    ],
+
+    name: "libshim_drm",
+
+    compile_multilib: "32",
+
+}

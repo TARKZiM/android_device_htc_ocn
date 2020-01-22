@@ -234,3 +234,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.virtual=0 \
     persist.debug.wfd.enable=1
+
+# VNDK
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.vndk.version=28

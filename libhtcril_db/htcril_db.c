@@ -21,7 +21,7 @@
 #include <pthread.h>
 #include "../../../../external/sqlite/dist/sqlite3.h"
 
-#include "cutils/log.h"
+#include "log/log.h"
 
 static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 static int done_init;

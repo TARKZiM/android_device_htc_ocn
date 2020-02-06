@@ -1,12 +1,12 @@
 cc_library_shared {
 
-    srcs: ["drm_shim.cpp"],
+    srcs: ["logging.cpp"],
 
     shared_libs: [
         "libbase",
     ],
 
-    name: "libshim_drm",
+    name: "libbase_shim",
 
     compile_multilib: "32",
 

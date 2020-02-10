@@ -1,13 +1,6 @@
-cc_library_shared {
-
-    srcs: ["logging.cpp"],
-
-    shared_libs: [
-        "libbase",
-    ],
-
+cc_library {
     name: "libbase_shim",
-
-    compile_multilib: "32",
-
+    srcs: ["logging.cpp"],
+    shared_libs: ["libbase"],
+    vendor: true
 }

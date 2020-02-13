@@ -131,8 +131,12 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
     libbt-vendor \
-    libbthost_if
+    libbthost_if \
+    bt-mac-generator \
+    audio.bluetooth.default \
+    android.hardware.bluetooth.audio@2.0-impl
 
 # Camera 
 PRODUCT_PACKAGES += \
@@ -322,7 +326,7 @@ PRODUCT_COPY_FILES += \
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
-    
+
 # OMX
 PRODUCT_PACKAGES += \
     libaacwrapper \
@@ -379,7 +383,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # Sensors
- PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 

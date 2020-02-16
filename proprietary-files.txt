@@ -35,7 +35,6 @@ vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libhvxMathVIO.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -750,6 +749,7 @@ vendor/lib64/lib_htc_fp_hal_util.so
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
+# GPS
 lib/vendor.qti.gnss@1.0.so|8fb1b90a7a07ca18822f075fc8b1a62526c55c0c
 lib/libxt_native.so
 lib/liblocationservice_jni.so

@@ -112,6 +112,12 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MANAGE_USERS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.qualcomm.location.XT">
+        <permission name="android.permission.MANAGE_DEVICE_ADMINS"/>
+        <permission name="android.permission.BIND_DEVICE_ADMIN"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="org.lineageos.settings.device">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>

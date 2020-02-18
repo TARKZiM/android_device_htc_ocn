@@ -787,7 +787,7 @@ vendor/lib64/libgeofence.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
--vendor/lib64/libloc_api_v02.so|e6ca0bf09feff29ea5d24640d43d0394a0a7155c
+vendor/lib64/libloc_api_v02.so|e6ca0bf09feff29ea5d24640d43d0394a0a7155c
 vendor/lib64/libloc_ds_api.so
 vendor/lib64/libloc_externalDr.so
 vendor/lib64/libloc_externalDrcore.so

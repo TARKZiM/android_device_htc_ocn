@@ -767,7 +767,7 @@ lib64/vendor.qti.gnss@1.1.so
 lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
 lib64/vendor.qti.gnss@1.0.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk|2b5999d87c4e93af0f8289e108c8580bafeb0bb9
+#-priv-app/com.qualcomm.location/com.qualcomm.location.apk|2b5999d87c4e93af0f8289e108c8580bafeb0bb9
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon

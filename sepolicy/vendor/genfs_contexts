@@ -18,3 +18,5 @@ genfscon sysfs /devices/soc/ca1c000.qcom,jpeg u:object_r:sysfs_jpeg:s0
 genfscon sysfs /android_camera/sensor u:object_r:sysfs_graphics:s0
 genfscon sysfs /android_camera2/sensor u:object_r:sysfs_graphics:s0
 genfscon sysfs /android_camera_awb_cal/awb_cal u:object_r:sysfs_graphics:s0
+
+genfscon sysfs /devices/soc/soc:fp_fpc1020                              u:object_r:sysfs_fingerprint:s0

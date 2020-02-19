@@ -261,7 +261,9 @@ PRODUCT_PACKAGES += \
     init.htc.fp.sh \
     init.qcom.usb.sh \
     init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qcom.firmware_links.sh \
+    move_widevine_data.sh
 
 # Input
 PRODUCT_COPY_FILES += \

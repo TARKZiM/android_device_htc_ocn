@@ -263,7 +263,8 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.firmware_links.sh \
-    move_widevine_data.sh
+    move_widevine_data.sh \
+    move_fingerprint_data.sh
 
 # Input
 PRODUCT_COPY_FILES += \

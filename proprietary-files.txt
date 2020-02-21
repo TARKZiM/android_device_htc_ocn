@@ -700,6 +700,9 @@ etc/firmware/widevine.mdt:/vendor/firmware/widevine.mdt
 # Edge Sensor
 vendor/firmware/edge_xr15510.img
 
+# Fingerprint with data migration script
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a66733fc6eb94d6715c8085e696b47e313cc2568
+
 # Fingerprint
 etc/firmware/cbfp_app.b00
 etc/firmware/cbfp_app.b01

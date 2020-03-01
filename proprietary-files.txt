@@ -158,7 +158,7 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|222bd2213d6833d23d77f547d4
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|2145be9a2a5113af6088fae53e67d0d413c29d0d
 vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so|6c383366d7c3b2734ccf65fea7574f882292232e
 
-# Camera
+# Camera from stock P 3.34.401.1
 bin/mm-qcamera-daemon
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/csidtg_camera.xml
@@ -217,33 +217,10 @@ vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libqomx_core.so
 vendor/lib/libhtc_facebeauty.so
 lib/libhtcsecure.so
-lib/sensors.hal.tof.so
 lib64/libhtcsecure.so
 vendor/lib64/libawb_calibration.so
-lib64/sensors.hal.tof.so
+vendor/lib/libcppf.so
 vendor/lib/libflash_pmic.so
-lib/libjni_blurbuster.so
-lib/libjni_chromaflash.so
-lib/libjni_dualcamera.so
-lib/libjni_filtergenerator.so
-lib/libjni_makeupV2.so
-lib/libjni_optizoom.so
-lib/libjni_panorama.so
-lib/libjni_sharpshooter.so
-lib/libjni_stillmore.so
-lib/libjni_trackingfocus.so
-lib/libjni_ubifocus.so
-lib64/libjni_blurbuster.so
-lib64/libjni_chromaflash.so
-lib64/libjni_dualcamera.so
-lib64/libjni_filtergenerator.so
-lib64/libjni_makeupV2.so
-lib64/libjni_optizoom.so
-lib64/libjni_panorama.so
-lib64/libjni_sharpshooter.so
-lib64/libjni_stillmore.so
-lib64/libjni_trackingfocus.so
-lib64/libjni_ubifocus.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
@@ -253,14 +230,9 @@ vendor/lib/libmmqjpegdma.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libois_lc898122.so
 vendor/lib/libois_lc898123f40.so
-vendor/lib/liboptizoom.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
-vendor/lib/libseemore.so
-lib/libtrueportrait.so
-lib64/libtrueportrait.so
-vendor/lib/libubifocus.so
 
 # Camera actuators
 vendor/lib/libactuator_ad5816g.so
@@ -1042,30 +1014,6 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
-
-# Qvr
-lib64/libqvrservice_ov9282_hvx_tuning.so
-lib64/libqvrservice_ov7251_hvx_tuning.so
-lib64/libqvrcamera_client.so
-lib64/libqvrservice_hvxcameraclient.so
-lib/libqvrservice_ov9282_hvx_tuning.so
-lib/libqvrservice.so
-lib/libqvrservice_ov7251_hvx_tuning.so
-lib/libqvrcamera_client.so
-lib/libqvrservice_hvxcameraclient.so
-lib/libqvr_adsp_driver_skel.so
-lib/libqvr_adsp_driver_stub.so
-vendor/etc/qvr/qvrservice_6dof_config_stereo.xml
-vendor/etc/qvr/qvrservice_config.txt
-vendor/etc/qvr/qvrservice_6dof_config.xml
-vendor/etc/mixer_paths_qvr.xml
-bin/qvrservice
-bin/qvrservicetest
-bin/qvrservicetest64
-bin/qvrcameratseq
-bin/qvrcameratest64
-bin/qvrcameratseq64
-bin/qvrcameratest
 
 # Radio
 -app/QtiTelephonyService/QtiTelephonyService.apk:vendor/app/QtiTelephonyService/QtiTelephonyService.apk|8e205bf2abb8d17f679cce354c6e849ec91b7563

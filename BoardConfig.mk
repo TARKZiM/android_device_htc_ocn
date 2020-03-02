@@ -223,7 +223,6 @@ BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
 TARGET_LD_SHIM_LIBS :=  \
 /vendor/lib/hw/camera.msm8998.so|libcamera_shim.so \
 /system/lib64/lib-imsvideocodec.so|libims_shim.so \
-/vendor/bin/hw/android.hardware.drm@1.0-service.widevine|libbase_shim.so \
 /system/vendor/bin/imsrcsd|libbase_shim.so
 
 # Qualcomm

@@ -135,9 +135,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
     libbt-vendor \
     libbthost_if \
-    bt-mac-generator \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0-impl
+    bt-mac-generator
 
 # Camera 
 PRODUCT_PACKAGES += \

@@ -19,19 +19,14 @@
          layouts against a remote context using our local theme colors. Due to the implementation
          details of Theme, we can't reference any local resources and MUST instead use the values
          directly. So use #ff263238 instead of @color/theme_primary and so on. -->
-    <style name="Theme.SettingsBase" parent="@android:style/Theme.DeviceDefault.Settings" />
+    <style name="Theme.Main" parent="@android:style/Theme.DeviceDefault.Settings" />
 
-    <style name="Theme.Settings" parent="Theme.SettingsBase">
+    <style name="Theme.Settings" parent="Theme.Main">
         <item name="dialogPreferenceStyle">@style/DialogPreferenceStyle</item>
-        <item name="dropdownPreferenceStyle">@style/DropdownPreferenceStyle</item>
+
         <item name="editTextPreferenceStyle">@style/EditTextPreference</item>
         <item name="preferenceCategoryStyle">@style/PreferenceCategoryStyle</item>
         <item name="preferenceFragmentStyle">@style/PreferenceFragmentStyle</item>
-        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentListSinglePane</item>
-        <item name="preferenceFragmentPaddingSide">@dimen/settings_side_margin</item>
-        <item name="preferenceHeaderPanelStyle">@style/PreferenceHeaderPanelSinglePane</item>
-        <item name="preferencePanelStyle">@style/PreferencePanelSinglePane</item>
-        <item name="preferenceListStyle">@style/PreferenceHeaderListSinglePane</item>
         <item name="preferenceScreenStyle">@style/PreferenceStyle</item>
         <item name="preferenceStyle">@style/PreferenceStyle</item>
         <item name="preferenceTheme">@style/PreferenceTheme</item>

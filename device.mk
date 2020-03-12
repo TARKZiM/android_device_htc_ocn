@@ -443,6 +443,10 @@ PRODUCT_PACKAGES += \
     vr.msm8998
 
 # Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 

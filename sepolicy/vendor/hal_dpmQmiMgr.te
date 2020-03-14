@@ -1,0 +1,2 @@
+allow hal_dpmQmiMgr sysfs:file { open } ;
+allow hal_dpmQmiMgr sysfs:file { read } ;

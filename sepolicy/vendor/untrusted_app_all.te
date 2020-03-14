@@ -4,3 +4,8 @@ dontaudit untrusted_app_all proc_zoneinfo:file { getattr open read };
 dontaudit untrusted_app_all proc_stat:file { getattr open read };
 dontaudit untrusted_app_all hal_memtrack_hwservice:hwservice_manager find;
 dontaudit untrusted_app_all hal_memtrack_default:binder call;
+
+allow untrusted_app_27 proc_net_tcp_udp:file { open } ;
+allow untrusted_app_27 proc_net_tcp_udp:file { read } ;
+allow untrusted_app_27 rootfs:dir { open } ;
+allow untrusted_app_27 rootfs:dir { read } ;

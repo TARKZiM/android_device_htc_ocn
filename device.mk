@@ -399,6 +399,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 25
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/htc/ocn

@@ -1,0 +1,7 @@
+allow flags_health_check apexd_prop:file { getattr } ;
+allow flags_health_check apexd_prop:file { open } ;
+allow flags_health_check bluetooth_prop:file { getattr } ;
+allow flags_health_check bluetooth_prop:file { open } ;
+allow flags_health_check bootloader_boot_reason_prop:file { getattr } ;
+allow flags_health_check bootloader_boot_reason_prop:file { open } ;
+allow flags_health_check boottime_prop:file { open } ;

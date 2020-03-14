@@ -1,0 +1,3 @@
+allow hal_gatekeeper_default vendor_tee_listener_prop:file { getattr } ;
+allow hal_gatekeeper_default vendor_tee_listener_prop:file { open } ;
+allow hal_gatekeeper_default vendor_tee_listener_prop:file { read } ;

@@ -1,3 +1,9 @@
 allow qti_init_shell shell_exec:file { entrypoint getattr read };
 allow qti_init_shell toolbox_exec:file rx_file_perms;
 allow qti_init_shell fingerprint_prop:property_service set;
+# Needed by init.qcom.bt.sh
+allow qti_init_shell bluetooth_data_file:file r_file_perms;
+allow qti_init_shell hci_attach_dev:chr_file rw_file_perms;
+
+allow qti_init_shell freq_prop:property_service { set } ;
+allow qti_init_shell sysfs:file { setattr } ;

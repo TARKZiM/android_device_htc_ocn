@@ -1,0 +1,9 @@
+allow location init:unix_stream_socket { read write } ;
+allow location location:capability { net_bind_service } ;
+allow location location:socket { bind } ;
+allow location location:socket { create } ;
+allow location location:socket { ioctl } ;
+allow location location:socket { read } ;
+allow location location:socket { write } ;
+allow location sysfs:file { open } ;
+allow location sysfs:file { read } ;

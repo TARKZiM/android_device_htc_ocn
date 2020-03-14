@@ -383,6 +383,8 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2 \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \

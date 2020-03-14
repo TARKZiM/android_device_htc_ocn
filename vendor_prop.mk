@@ -60,6 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
     qcom.bluetooth.soc=cherokee \
+    vendor.qcom.bluetooth.soc=cherokee \
     ro.bluetooth.a4wp=false \
     ro.bluetooth.dun=true \
     ro.bluetooth.emb_wp_mode=true \
@@ -67,11 +68,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.remote.autoconnect=true \
     ro.bluetooth.request.master=true \
     ro.bluetooth.sap=true \
-    ro.bluetooth.wipower=false \
+    ro.bluetooth.wipower=true \
     ro.bt.bdaddr_path=/sys/module/htc_bdaddress/parameters/bdaddress \
+    ro.vendor.bt.bdaddr_path=/sys/module/htc_bdaddress/parameters/bdaddress \
     ro.bt.ble_tag=1 \
     ro.qc.bluetooth.stack=bluedroid \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx \
+    persist.bluetooth.avrcpversion = avrcp15 \
+    persist.vendor.btstack.enable.splita2dp=false \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -119,6 +126,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ims.disableQXDMLogs=1
 
 # Media
+#13631487 is decimal sum of supported codecs in AAL
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     media.stagefright.enable-aac=true \
@@ -131,6 +140,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mmp.enable.3g2=true \
     persist.media.treble_omx=false \
     persist.mm.enable.prefetch=true
+
+# Misc
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.disable_rescue=true
     
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -170,6 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
     DEVICE_PROVISIONED=1 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.baseband.arch=msm
 
 # RmNet Data

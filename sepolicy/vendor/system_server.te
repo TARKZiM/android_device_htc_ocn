@@ -12,3 +12,10 @@ allow system_server user_profile_data_file:dir r_file_perms;
 
 # For gestures
 allow system_server sysfs_sensors:file w_file_perms;
+
+allow system_server block_device:blk_file { getattr } ;
+allow system_server block_device:blk_file { open } ;
+allow system_server block_device:blk_file { read } ;
+allow system_server block_device:blk_file { write } ;
+
+allow system_server block_device:blk_file { ioctl } ;

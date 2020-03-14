@@ -110,7 +110,6 @@ QCOM_BT_USE_SMD_TTY := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 BOARD_USES_ALSA_AUDIO := true
-BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8998
@@ -219,7 +218,13 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Root
-BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
+BOARD_ROOT_EXTRA_FOLDERS := \
+    carrier \
+    firmware/image
+
+BOARD_ROOT_EXTRA_SYMLINKS += /vendor/dsp:/dsp
+BOARD_ROOT_EXTRA_SYMLINKS += /vendor/bt_firmware:/bt_firmware
+BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/persist:/persist
 
 # Shims
 TARGET_LD_SHIM_LIBS :=  \

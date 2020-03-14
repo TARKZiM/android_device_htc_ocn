@@ -1,3 +1,18 @@
 set_prop(rild, diag_prop)
 allow rild shell_exec:file { getattr read open execute execute_no_trans };
 allow rild toolbox_exec:file { getattr read open execute execute_no_trans };
+
+allow rild device:dir { add_name } ;
+allow rild device:dir { write } ;
+allow rild device:file { create } ;
+allow rild device:file { getattr } ;
+allow rild device:file { open } ;
+allow rild device:file { read write } ;
+allow rild device:file { read write open } ;
+allow rild init:binder { call } ;
+allow rild init:binder { transfer } ;
+allow rild vendor_radio_data_file:file { getattr } ;
+allow rild vendor_radio_data_file:file { ioctl } ;
+allow rild vendor_radio_data_file:file { lock } ;
+allow rild vendor_radio_data_file:file { open } ;
+allow rild vendor_radio_data_file:file { read } ;

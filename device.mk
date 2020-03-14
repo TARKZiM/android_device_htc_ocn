@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8998 \
     fingerprintd
 
+# fwk-detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \

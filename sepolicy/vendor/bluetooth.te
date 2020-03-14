@@ -1,0 +1,2 @@
+allow bluetooth init:binder { call } ;
+allow bluetooth init:binder { transfer } ;

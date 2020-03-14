@@ -6,3 +6,5 @@ allow hwservicemanager init:dir { search };
 allow hwservicemanager init:file { read open };
 allow hwservicemanager init:process { getattr };
 
+allow hwservicemanager init:binder { call } ;
+allow hwservicemanager init:binder { transfer } ;

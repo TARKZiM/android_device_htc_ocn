@@ -1,0 +1,15 @@
+allow hal_gnss_qti hal_gnss_qti:netlink_generic_socket { read } ;
+allow hal_gnss_qti hal_gnss_qti:socket { read } ;
+allow hal_gnss_qti hal_gnss_qti:socket { write } ;
+
+allow hal_gnss_qti hal_gnss_qti:netlink_generic_socket { bind } ;
+allow hal_gnss_qti hal_gnss_qti:netlink_generic_socket { create } ;
+allow hal_gnss_qti hal_gnss_qti:socket { create } ;
+allow hal_gnss_qti hal_gnss_qti:socket { ioctl } ;
+allow hal_gnss_qti init:binder { call } ;
+allow hal_gnss_qti init:binder { transfer } ;
+allow hal_gnss_qti init:unix_dgram_socket { sendto } ;
+allow hal_gnss_qti init:unix_stream_socket { connectto } ;
+allow hal_gnss_qti netmgrd_socket:sock_file { write } ;
+allow hal_gnss_qti sysfs:file { open } ;
+allow hal_gnss_qti sysfs:file { read } ;

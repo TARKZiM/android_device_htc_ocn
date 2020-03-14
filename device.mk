@@ -433,10 +433,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
-
-# VNDK-SP
-PRODUCT_PACKAGES += \
+    libstdc++.vendor \
     vndk-sp
 
 PRODUCT_COPY_FILES += \

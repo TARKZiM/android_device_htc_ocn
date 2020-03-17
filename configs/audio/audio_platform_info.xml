@@ -39,10 +39,10 @@
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="501"/>
             <!-- headset-mic: Interal_MIC_VoiceRecoder -->
 
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_NREC" acdb_id="21"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="21"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="21"/>
-        <device name="SND_DEVICE_OUT_BT_SCO_WB" acdb_id="22"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC" acdb_id="1420"/>
+        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="1420"/>
+        <device name="SND_DEVICE_OUT_BT_SCO" acdb_id="1520"/>
+        <device name="SND_DEVICE_OUT_BT_SCO_WB" acdb_id="1520"/>
 
         <!-- HTC DEV START -->
         <!-- HTC OUT MFG -->

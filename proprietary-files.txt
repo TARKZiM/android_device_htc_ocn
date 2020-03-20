@@ -707,7 +707,7 @@ vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/lib_fpc_tac_shared.so
 vendor/lib64/lib_htc_fp_hal_util.so
 
-# Gatekeeper
+# Gatekeeper  from stock Pie
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 

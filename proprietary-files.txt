@@ -911,11 +911,11 @@ vendor/firmware/ipa_fws.mdt
 # IRQ balance - Mata
 vendor/bin/msm_irqbalance|9b2513151a5b3dc5f20893bc6b0bb0942185e5ab
 
-# Keystore
+# Keystore from stock Pie
 vendor/lib64/hw/keystore.msm8998.so
 vendor/lib/hw/keystore.msm8998.so
 
-# Keymaster
+# Keymaster from stock Pie
 vendor/lib/libkeymasterutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterdeviceutils.so

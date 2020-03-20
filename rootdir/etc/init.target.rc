@@ -147,6 +147,8 @@ service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
+   shutdown critical
+   writepid /dev/cpuset/system-background/tasks
 
 service vendor.thermal-engine /system/vendor/bin/thermal-engine
    class main

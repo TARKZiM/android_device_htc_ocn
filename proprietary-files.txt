@@ -588,9 +588,9 @@ vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so
 vendor/lib64/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so
 
-# DRM
+# DRM from stock Pie
 vendor/bin/qseecomd
-vendor/bin/qseecomd_static
+bin/qseecomd_static
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libtbaseLoader.so
 vendor/lib64/libdrmfs.so
@@ -603,7 +603,7 @@ vendor/lib64/libSecureUILib.so
 vendor/lib64/libssd.so
 vendor/lib64/libtbaseLoader.so
 
-# DRM firmware
+# DRM firmware from stock Pie
 etc/firmware/cmnlib.b00
 etc/firmware/cmnlib.b01
 etc/firmware/cmnlib.b02
@@ -629,15 +629,6 @@ etc/firmware/dxhdcp2.b05
 etc/firmware/dxhdcp2.b06
 etc/firmware/dxhdcp2.b07
 etc/firmware/dxhdcp2.mdt
-etc/firmware/edata.b00
-etc/firmware/edata.b01
-etc/firmware/edata.b02
-etc/firmware/edata.b03
-etc/firmware/edata.b04
-etc/firmware/edata.b05
-etc/firmware/edata.b06
-etc/firmware/edata.b07
-etc/firmware/edata.mdt
 etc/firmware/hdcp1.b00
 etc/firmware/hdcp1.b01
 etc/firmware/hdcp1.b02

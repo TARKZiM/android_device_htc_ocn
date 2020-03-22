@@ -109,6 +109,7 @@ allow init ipa_dev:chr_file { ioctl } ;
 allow init ipa_dev:chr_file { open } ;
 allow init ipa_dev:chr_file { read write } ;
 allow init ipa_vendor_data_file:file { lock } ;
+allow init firmware_file:dir {mounton setattr};
 allow init location_data_file:file { ioctl } ;
 allow init location_data_file:file { lock } ;
 allow init location_socket:sock_file { write } ;

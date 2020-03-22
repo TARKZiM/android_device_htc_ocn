@@ -1,3 +1,6 @@
 allow hal_keymaster_default vendor_tee_listener_prop:file { getattr } ;
 allow hal_keymaster_default vendor_tee_listener_prop:file { open } ;
 allow hal_keymaster_default vendor_tee_listener_prop:file { read } ;
+
+allow hal_keymaster_default firmware_file:dir { search };
+allow hal_keymaster_default firmware_file:file { open read getattr};

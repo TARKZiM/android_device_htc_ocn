@@ -27,7 +27,7 @@ static const char *htc_indiads_properties =
     "ro.build.product=htc_ocndugl\n"
     "persist.radio.VT_CAM_INTERFACE=2\n"
     "ro.telephony.default_network=9\n"
-    "persist.radio.sap_silent_pin=1\n"
+    "persist.vendor.radio.sap_silent_pin=1\n"
     "persist.radio.multisim.config=dsds\n"
     "ro.build.changelist=\n"
 ;

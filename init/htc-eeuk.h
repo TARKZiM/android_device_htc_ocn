@@ -10,6 +10,6 @@ static const char *htc_eeuk_properties =
     "ro.build.product=htc_ocnuhl\n"
     "persist.radio.VT_CAM_INTERFACE=2\n"
     "ro.telephony.default_network=9\n"
-    "persist.radio.sap_silent_pin=1\n"
+    "persist.vendor.radio.sap_silent_pin=1\n"
     "ro.build.changelist=\n"
 ;

@@ -19,7 +19,7 @@ static const char *htc_emea_properties =
     "ro.ril.enable.pre_r8fd=1\n"
     "ro.ril.show.all.plmn=1\n"
     "ro.ril.esm.blacklist=22601,26806,26801,21403,42502,25007,25054,25027\n"
-    "ro.ril.hsxpa=4\n"
+    "ro.ril.hsxpa=5\n"
     "ro.ril.hsdpa.category=24\n"
     "ro.ril.hsupa.category=6\n"
     "ro.ril.disable.cpc=0\n"
@@ -27,6 +27,6 @@ static const char *htc_emea_properties =
     "ro.build.product=htc_ocnuhl\n"
     "persist.radio.VT_CAM_INTERFACE=2\n"
     "ro.telephony.default_network=9\n"
-    "persist.radio.sap_silent_pin=1\n"
+    "persist.vendor.radio.sap_silent_pin=1\n"
     "ro.build.changelist=1002308\n"
 ;

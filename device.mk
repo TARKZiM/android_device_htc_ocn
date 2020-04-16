@@ -472,6 +472,10 @@ PRODUCT_COPY_FILES += \
 # Shipping API level (for CTS backward compatibility)
 PRODUCT_SHIPPING_API_LEVEL := 25
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_ril
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/htc/ocn

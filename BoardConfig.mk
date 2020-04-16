@@ -230,7 +230,8 @@ TARGET_LD_SHIM_LIBS :=  \
     /system/lib64/lib-imsvideocodec.so|libims_shim.so \
     /vendor/bin/imsrcsd|libbase_shim.so \
     /system/vendor/lib64/lib-uceservice.so|libbase_shim.so \
-    /system/product/lib64/libdpmframework.so|libcutils_shim.so
+    /system/product/lib64/libdpmframework.so|libcutils_shim.so \
+    /system/vendor/lib64/libril-qc-qmi-1.so|libshim_ril.so
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

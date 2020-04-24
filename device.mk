@@ -546,6 +546,7 @@ PRODUCT_PACKAGES += \
     wificond \
     wifilogd \
     libcld80211 \
+    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant_wcn.conf \
     wpa_supplicant.conf

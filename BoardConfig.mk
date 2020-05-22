@@ -18,6 +18,10 @@ BOARD_VENDOR := htc
 
 DEVICE_PATH := device/htc/ocn
 
+# Android R: Disable logic for new vendor_boot
+# Our devices do not support it
+TARGET_NO_VENDOR_BOOT := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 

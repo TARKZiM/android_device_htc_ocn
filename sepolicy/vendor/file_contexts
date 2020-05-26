@@ -101,5 +101,9 @@
 /sys/kernel/boot_wlan(/.*)?                                                   u:object_r:sysfs_wifi:s0
 /sys/devices/soc/780000.qcom,msm-core/uio/uio2(/.*)?			      u:object_r:sysfs_uio_file:s0
 
+# TimeKeep
+/sys/devices/soc\.0/qpnp-rtc-8/rtc/rtc0(/.*)?                           u:object_r:sysfs_rtc:s0
+/(system/vendor|vendor)/bin/timekeep                                    u:object_r:timekeep_exec:s0
+
 # vendor
 #/vendor/bin/tftp_server                                                       u:object_r:rfs_access_exec:s0

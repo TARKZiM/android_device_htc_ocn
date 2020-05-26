@@ -2,6 +2,10 @@
   {
     "repository": "android_kernel_htc_msm8998",
     "target_path": "kernel/htc/msm8998"
+  },
+  {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
   }
 ]
 

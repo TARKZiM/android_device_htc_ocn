@@ -461,6 +461,11 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    timekeep \
+    TimeKeep
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \

@@ -242,9 +242,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Time-services
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.backup.ntpServer="0.pool.ntp.org" \
-    persist.delta_time.enable=true \
-    persist.timed.enable=true
+    persist.backup.ntpServer="0.pool.ntp.org"
 
 # VoLTE
 PRODUCT_PROPERTY_OVERRIDES += \

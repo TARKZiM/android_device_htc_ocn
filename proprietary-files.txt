@@ -1185,8 +1185,6 @@ vendor/bin/thermal-engine|95e0937ccc3f876c27772ca0f8086505c11dc927
 vendor/lib64/libthermalioctl.so|77e51147daac315cb37f59e707bba1ebbc785d87
 
 # Time services from OnePlus msm8998
-vendor/bin/time_daemon|553c69f6436187e1c210da26e3f45ac0d739e947
--vendor/app/TimeService/TimeService.apk;:vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|ab3469514a845e8933e1544e085dc686dc988637
 -vendor/lib/libtime_genoff.so|a441c13dbb416f40ef1a5ce561c432b3e713d95d
 -vendor/lib64/libtime_genoff.so|5cbe121e2c47db348e5e034c7e702cd9494d6fd2
 

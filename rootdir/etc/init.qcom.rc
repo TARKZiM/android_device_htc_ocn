@@ -786,9 +786,6 @@ on post-fs-data
 
     mkdir /data/vendor/hostapd 0770 system wifi
 
-    # Create /data/vendor/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
     chown radio radio /carrier
     chown radio radio /carrier/htcril.db
 
@@ -1438,12 +1435,6 @@ service vendor.poweroffhandler /vendor/bin/poweroffhandler
     group graphics audio
     disabled
     oneshot
-
-service vendor.time_daemon /vendor/bin/time_daemon
-    class main
-    user root
-    group root
-    writepid /dev/cpuset/system-background/tasks
 
 service vendor.qdmastatsd /vendor/bin/qdmastatsd
     class late_start

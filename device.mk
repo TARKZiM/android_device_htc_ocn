@@ -477,6 +477,10 @@ PRODUCT_SHIPPING_API_LEVEL := 25
 PRODUCT_SOONG_NAMESPACES += \
     device/htc/ocn
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1

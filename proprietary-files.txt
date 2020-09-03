@@ -1005,7 +1005,7 @@ vendor/lib64/libsmemlog.so
 
 # Radio
 -app/QtiTelephonyService/QtiTelephonyService.apk:vendor/app/QtiTelephonyService/QtiTelephonyService.apk|8e205bf2abb8d17f679cce354c6e849ec91b7563
-framework/qti-telephony-common.jar|b1953a3599255f08f1785c677d22810f65e0167b
+product/framework/qti-telephony-common.jar
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/rmt_storage
@@ -1067,6 +1067,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 etc/permissions/qti-vzw-ims-internal.xml
 lib64/librcc.so
 lib/librcc.so
@@ -1083,18 +1084,18 @@ vendor/bin/imsqmidaemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsrcsd
--priv-app/ims/ims.apk|eef47c0b6f250e7f96e7155d84274b1c83940d8f
+-product/priv-app/ims/ims.apk
 vendor/framework/qti-vzw-ims-internal.jar
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-imsrcs-v2.so
 vendor/lib/lib-imsrcs-v2.so
 lib64/lib-imscamera.so
-lib64/libimscamera_jni.so
+product/lib64/libimscamera_jni.so
 lib64/lib-imsvtextutils.so
-lib64/libimsmedia_jni.so
-lib/libimsmedia_jni.so
+product/lib64/libimsmedia_jni.so
+product/lib/libimsmedia_jni.so
 lib/lib-imscamera.so
-lib/libimscamera_jni.so
+product/lib/libimscamera_jni.so
 lib/lib-imsvtextutils.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib/lib-imsdpl.so

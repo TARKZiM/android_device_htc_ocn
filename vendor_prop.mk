@@ -97,6 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
+    persist.vendor.data.iwlan.enable=true \
     persist.data.mode=concurrent
 
 # Display

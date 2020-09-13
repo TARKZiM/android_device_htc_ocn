@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
 # IMS
 PRODUCT_PACKAGES += \
     libims_shim \
+    libcutils_shim \
     libbase_shim
 
 # Init

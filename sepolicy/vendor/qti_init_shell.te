@@ -7,3 +7,12 @@ allow qti_init_shell hci_attach_dev:chr_file rw_file_perms;
 
 allow qti_init_shell freq_prop:property_service { set } ;
 allow qti_init_shell sysfs:file { setattr } ;
+
+allow qti_init_shell crash_cnt_prop:file { getattr } ;
+allow qti_init_shell crash_cnt_prop:file { open } ;
+allow qti_init_shell crash_cnt_prop:file { read } ;
+allow qti_init_shell crash_cnt_prop:property_service { set } ;
+allow qti_init_shell crash_detect_prop:file { getattr } ;
+allow qti_init_shell crash_detect_prop:file { open } ;
+allow qti_init_shell crash_detect_prop:file { read } ;
+allow qti_init_shell crash_detect_prop:property_service { set } ;

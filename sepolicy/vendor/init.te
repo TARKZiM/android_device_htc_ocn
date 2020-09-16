@@ -143,4 +143,11 @@ allow init vndbinder_device:chr_file { read } ;
 allow init vndbinder_device:chr_file { write } ;
 allow init vndservicemanager:binder { call } ;
 allow init vndservicemanager:binder { transfer } ;
+
 allow init wpa_socket:sock_file { write } ;
+allow init fwmarkd_socket:sock_file { write } ;
+allow init hal_gnss_qti:binder { call } ;
+allow init init:udp_socket { ioctl } ;
+allow init netd:unix_stream_socket { connectto } ;
+allow init rild:binder { call } ;
+allow init system_file:file { mounton } ;

@@ -21,3 +21,7 @@ type_transition netd wifi_vendor_data_file:dir wpa_socket "sockets";
 allow netd wpa_socket:dir create_dir_perms;
 
 allow netd rootfs:lnk_file r_file_perms;
+
+allow netd init:udp_socket { getopt } ;
+allow netd init:udp_socket { read write } ;
+allow netd init:udp_socket { setopt } ;

@@ -477,12 +477,6 @@ PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service \
-    thermal.msm8998
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service \

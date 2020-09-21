@@ -1,0 +1,2 @@
+allow move-fp-data-sh fingerprintd_data_file:file { create } ;
+allow move-fp-data-sh fingerprintd_data_file:file { write open } ;

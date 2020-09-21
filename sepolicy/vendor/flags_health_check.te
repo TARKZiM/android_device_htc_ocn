@@ -10,3 +10,11 @@ allow flags_health_check bpf_progs_loaded_prop:file { getattr } ;
 allow flags_health_check bpf_progs_loaded_prop:file { open } ;
 allow flags_health_check bservice_prop:file { getattr } ;
 allow flags_health_check bservice_prop:file { open } ;
+
+allow flags_health_check cnd_prop:file { getattr } ;
+allow flags_health_check cnd_prop:file { open } ;
+allow flags_health_check cnd_vendor_prop:file { getattr } ;
+allow flags_health_check cnd_vendor_prop:file { open } ;
+allow flags_health_check crash_cnt_prop:file { getattr } ;
+allow flags_health_check crash_cnt_prop:file { open } ;
+allow flags_health_check crash_detect_prop:file { open } ;

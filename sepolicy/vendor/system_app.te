@@ -6,3 +6,5 @@ allow system_app init:binder { call } ;
 allow system_app cnd_prop:file { getattr } ;
 allow system_app cnd_prop:file { open } ;
 allow system_app init:binder { transfer } ;
+
+allow system_app cnd_prop:file { read } ;

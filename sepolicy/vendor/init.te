@@ -151,3 +151,7 @@ allow init init:udp_socket { ioctl } ;
 allow init netd:unix_stream_socket { connectto } ;
 allow init rild:binder { call } ;
 allow init system_file:file { mounton } ;
+
+allow init init:udp_socket { ioctl } ;
+
+allow init system_suspend_hwservice:hwservice_manager find;

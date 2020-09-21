@@ -9,3 +9,18 @@ allow untrusted_app_27 proc_net_tcp_udp:file { open } ;
 allow untrusted_app_27 proc_net_tcp_udp:file { read } ;
 allow untrusted_app_27 rootfs:dir { open } ;
 allow untrusted_app_27 rootfs:dir { read } ;
+
+allow untrusted_app_27 cgroup:dir { open } ;
+allow untrusted_app_27 cgroup:dir { read } ;
+allow untrusted_app_27 hwservice_contexts_file:file { getattr } ;
+allow untrusted_app_27 hwservice_contexts_file:file { open } ;
+allow untrusted_app_27 hwservice_contexts_file:file { read } ;
+allow untrusted_app_27 init_exec:lnk_file { read } ;
+allow untrusted_app_27 sepolicy_file:file { getattr } ;
+allow untrusted_app_27 sepolicy_file:file { open } ;
+allow untrusted_app_27 sepolicy_file:file { read } ;
+allow untrusted_app_27 service_contexts_file:file { open } ;
+allow untrusted_app_27 service_contexts_file:file { read } ;
+allow untrusted_app_27 untrusted_app_27:unix_stream_socket { connectto } ;
+allow untrusted_app rootfs:dir { open } ;
+allow untrusted_app rootfs:dir { read } ;

@@ -18,3 +18,13 @@ allow flags_health_check cnd_vendor_prop:file { open } ;
 allow flags_health_check crash_cnt_prop:file { getattr } ;
 allow flags_health_check crash_cnt_prop:file { open } ;
 allow flags_health_check crash_detect_prop:file { open } ;
+
+allow flags_health_check crash_detect_prop:file { getattr } ;
+allow flags_health_check ctl_adbd_prop:file { getattr } ;
+allow flags_health_check ctl_adbd_prop:file { open } ;
+allow flags_health_check ctl_bootanim_prop:file { getattr } ;
+allow flags_health_check ctl_bootanim_prop:file { open } ;
+allow flags_health_check ctl_bugreport_prop:file { getattr } ;
+allow flags_health_check ctl_bugreport_prop:file { open } ;
+allow flags_health_check ctl_console_prop:file { getattr } ;
+allow flags_health_check ctl_console_prop:file { open } ;

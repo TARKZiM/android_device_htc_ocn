@@ -3,4 +3,3 @@ allow fsck userdata_block_device:blk_file rw_file_perms;
 allow fsck fsck:capability { dac_override } ;
 allow fsck mnt_vendor_file:dir { getattr } ;
 allow fsck tmpfs:blk_file { getattr } ;
-allow fsck_untrusted vold_device:blk_file { ioctl } ;

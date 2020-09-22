@@ -229,7 +229,7 @@ BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/persist:/persist
 TARGET_LD_SHIM_LIBS :=  \
 /vendor/lib/hw/camera.msm8998.so|libcamera_shim.so \
 /system/lib64/lib-imsvideocodec.so|libims_shim.so \
-/system/vendor/bin/imsrcsd|libbase_shim.so
+/vendor/bin/imsrcsd|libbase_shim.so
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true

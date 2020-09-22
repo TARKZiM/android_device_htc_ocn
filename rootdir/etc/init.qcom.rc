@@ -875,31 +875,31 @@ on post-fs-data
     chown system system /data/system/nanohub_lock/
     restorecon /data/system/nanohub_lock
 
-service vendor.nqnfcinfo /system/vendor/bin/nqnfcinfo
+service vendor.nqnfcinfo /vendor/bin/nqnfcinfo
     class late_start
     group nfc
     user system
     oneshot
     disabled
 
-service vendor.iop /system/vendor/bin/iop
+service vendor.iop /vendor/bin/iop
     class main
     user root
     group root
     disabled
     socket iop seqpacket 0666 root system
 
-service vendor.qcomsysd /system/vendor/bin/qcom-system-daemon
+service vendor.qcomsysd /vendor/bin/qcom-system-daemon
     class main
     user root
     group root diag oem_2901
     disabled
 
-service vendor.ssr_setup /system/vendor/bin/ssr_setup
+service vendor.ssr_setup /vendor/bin/ssr_setup
     oneshot
     disabled
 
-service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
+service vendor.ss_ramdump /vendor/bin/subsystem_ramdump
     class main
     user system
     group system
@@ -991,13 +991,13 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
-service vendor.cnd /system/vendor/bin/cnd
+service vendor.cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.dpmQmiMgr /system/vendor/bin/dpmQmiMgr
+service vendor.dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
     user system
     group radio system
@@ -1025,7 +1025,7 @@ on property:wc_transport.start_hci=true
 on property:wc_transport.start_hci=false
     stop vendor.start_hci_filter
 
-service vendor.start_hci_filter /system/vendor/bin/wcnss_filter
+service vendor.start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
     group bluetooth diag system wakelock
@@ -1038,7 +1038,7 @@ on property:wc_transport.start_root=true
 on property:wc_transport.start_root=false
     stop vendor.hci_filter_root
 
-service vendor.hci_filter_root /system/vendor/bin/wcnss_filter
+service vendor.hci_filter_root /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
     group bluetooth diag system
@@ -1081,7 +1081,7 @@ service ftmd /system/bin/logwrapper /system/bin/ftmdaemon
     disabled
     oneshot
 
-service vendor.port-bridge /system/vendor/bin/port-bridge
+service vendor.port-bridge /vendor/bin/port-bridge
     class main
     user radio
     group radio system inet
@@ -1096,7 +1096,7 @@ service qmiproxy /system/bin/qmiproxy
     disabled
 
 # QMUX must be in multiple groups to support external process connections
-service vendor.qmuxd /system/vendor/bin/qmuxd
+service vendor.qmuxd /vendor/bin/qmuxd
 # +SSD_RIL:Set qmuxd as class core to avoid QMI send fail problem
     class core
 # -SSD_RIL:Set qmuxd as class core to avoid QMI send fail problem
@@ -1104,26 +1104,26 @@ service vendor.qmuxd /system/vendor/bin/qmuxd
     group radio audio bluetooth gps nfc diag
     disabled
 
-service vendor.netmgrd /system/vendor/bin/netmgrd
+service vendor.netmgrd /vendor/bin/netmgrd
     class main
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.ipacm /system/vendor/bin/ipacm
+service vendor.ipacm /vendor/bin/ipacm
     class main
     user radio
     group radio inet
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.qti /system/vendor/bin/qti
+service vendor.qti /vendor/bin/qti
     class main
     user radio
     group radio oem_2901 diag usb net_admin
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.dataadpl /system/vendor/bin/adpl
+service vendor.dataadpl /vendor/bin/adpl
     class main
     user radio
     group radio oem_2901 diag usb net_admin
@@ -1153,19 +1153,19 @@ on property:ro.data.large_tcp_window_size=true
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
-service vendor.amp_init /system/vendor/bin/amploader -i
+service vendor.amp_init /vendor/bin/amploader -i
     class late_start
     user root
     disabled
     oneshot
 
-service vendor.amp_load /system/vendor/bin/amploader -l 7000
+service vendor.amp_load /vendor/bin/amploader -l 7000
     class late_start
     user root
     disabled
     oneshot
 
-service vendor.amp_unload /system/vendor/bin/amploader -u
+service vendor.amp_unload /vendor/bin/amploader -u
     class late_start
     user root
     disabled
@@ -1184,14 +1184,14 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     writepid /dev/cpuset/system-background/tasks
 
 # HTC_WIFI: change cnss_diag to late start
-service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f
+service vendor.cnss_diag /vendor/bin/cnss_diag -q -f
     class late_start
     user system
     group system wifi inet net_admin sdcard_rw media_rw diag oem_2901
     oneshot
     disabled
 
-service vendor.cnss-daemon /system/vendor/bin/cnss-daemon -n -l
+service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
     user system
     group system inet net_admin wifi
@@ -1245,7 +1245,7 @@ service vendor.mlid /vendor/bin/mlid
     socket mlid stream 0666 gps gps
     disabled
 
-service vendor.loc_launcher /system/vendor/bin/loc_launcher
+service vendor.loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet diag wifi
@@ -1294,7 +1294,7 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
     group system radio
     disabled
 
-service vendor.ims_regmanager /system/vendor/bin/exe-ims-regmanagerprocessnative
+service vendor.ims_regmanager /vendor/bin/exe-ims-regmanagerprocessnative
     class late_start
     group net_bt_admin inet radio wifi
     disabled
@@ -1335,7 +1335,7 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
-service vendor.ssr_diag /system/vendor/bin/ssr_diag
+service vendor.ssr_diag /vendor/bin/ssr_diag
     class late_start
     user system
     group system
@@ -1386,7 +1386,7 @@ service vm_bms /system/bin/vm_bms
     group root
     disabled
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
@@ -1414,13 +1414,13 @@ service vendor.LKCore-rel /vendor/bin/LKCore
     user system
     group system log diag
 
-service vendor.qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+service vendor.qseeproxydaemon /vendor/bin/qseeproxydaemon
     class late_start
     user system
     group system
     disabled
 
-service vendor.esepmdaemon /system/vendor/bin/esepmdaemon
+service vendor.esepmdaemon /vendor/bin/esepmdaemon
     class core
     disabled
     user system
@@ -1432,20 +1432,20 @@ on charger
     start vendor.qcom-post-boot
 
 #add poweroffhandler
-service vendor.poweroffhandler /system/vendor/bin/poweroffhandler
+service vendor.poweroffhandler /vendor/bin/poweroffhandler
     class core
     user media
     group graphics audio
     disabled
     oneshot
 
-service vendor.time_daemon /system/vendor/bin/time_daemon
+service vendor.time_daemon /vendor/bin/time_daemon
     class main
     user root
     group root
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
+service vendor.qdmastatsd /vendor/bin/qdmastatsd
     class late_start
     user system
     group readproc system net_bw_stats radio

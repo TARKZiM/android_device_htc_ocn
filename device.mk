@@ -275,6 +275,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl
 
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # hidl base, or8 props still depend on it
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \

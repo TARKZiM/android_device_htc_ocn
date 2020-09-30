@@ -227,6 +227,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     libshim_drm
 
+# DumpState
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.1-service-ocn
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \

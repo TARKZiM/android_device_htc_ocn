@@ -22,4 +22,8 @@
        3 = right side
   -->
   <integer name="config_fingerprintSensorLocation">1</integer>
+
+  <!-- Whether to display touch sensitivity switch -->
+  <bool name="config_show_touch_sensitivity">true</bool>
+
 </resources>

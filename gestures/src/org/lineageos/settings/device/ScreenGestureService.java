@@ -47,9 +47,6 @@ import android.util.Log;
 
 import java.util.Iterator;
 
-import lineageos.providers.LineageSettings;
-import org.lineageos.internal.util.FileUtils;
-
 import java.util.List;
 
 public class ScreenGestureService extends HTCSuperGestures implements SensorEventListener {

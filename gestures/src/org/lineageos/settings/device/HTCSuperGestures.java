@@ -67,9 +67,6 @@ import java.util.Iterator;
 import java.lang.Runtime;
 import java.io.IOException;
 
-import lineageos.providers.LineageSettings;
-import org.lineageos.internal.util.FileUtils;
-
 import java.util.List;
 
 public abstract class HTCSuperGestures extends Service {
@@ -125,7 +122,7 @@ public abstract class HTCSuperGestures extends Service {
     }
 
     protected void launchCamera() {
-        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
     }

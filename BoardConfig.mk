@@ -241,6 +241,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/ocn/releasetools
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 TARGET_RIL_VARIANT := caf
+CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/apns-conf.xml
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01

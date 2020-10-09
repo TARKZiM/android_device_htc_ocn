@@ -6,3 +6,5 @@ user=system seinfo=platform name=com.sony.timekeep domain=timekeep_app type=app_
 # ContextImpl: Failed to update user.inode_cache: stat failed: EACCES (Permission denied)
 # ContextImpl: Failed to ensure /data/user_de/0/com.sony.qcrilam/code_cache: mkdir failed: EACCES (Permission denied)
 # ContextImpl: Failed to update user.inode_code_cache: stat failed: EACCES (Permission denied)
+
+user=radio seinfo=platform name=.qtidataservices domain=qtidataservices_app type=radio_data_file

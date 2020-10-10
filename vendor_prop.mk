@@ -244,6 +244,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer="0.pool.ntp.org"
 
+# Traced
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.traced.enable=0
+
 # VoLTE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \

@@ -188,8 +188,8 @@ PRODUCT_PACKAGES += \
     services-ext
 
 # Gestures
-PRODUCT_PACKAGES += \
-GestureHandler
+#PRODUCT_PACKAGES += \
+#GestureHandler
 
 # Display
 PRODUCT_PACKAGES += \
@@ -423,8 +423,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \

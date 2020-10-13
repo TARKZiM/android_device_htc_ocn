@@ -552,7 +552,7 @@ on boot
 
     # Flashlight
     chown system system /sys/class/leds/flashlight/brightness
-    chown vte    vte    /dev/vte_flt
+    #chown vte    vte    /dev/vte_flt
     chmod 0660 /dev/vte_flt
 
     # button-backlight
@@ -1425,7 +1425,6 @@ service vendor.esepmdaemon /vendor/bin/esepmdaemon
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    load_system_props
     start vendor.qcom-post-boot
 
 #add poweroffhandler

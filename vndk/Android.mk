@@ -65,6 +65,7 @@ LOCAL_MODULE := vndk-sp
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_TAGS := optional
 LOCAL_REQUIRED_MODULES := $(addsuffix .vndk-sp-gen,$(VNDK_SP_LIBRARIES))
+LOCAL_CHECK_ELF_FILES := false
 include $(BUILD_PHONY_PACKAGE)
 
 install_in_hw_dir :=

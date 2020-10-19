@@ -175,8 +175,6 @@ PRODUCT_PACKAGES += \
     libqomx_core \
     libmmjpeg_interface \
     libmmcamera_interface \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0_vendor \
     libsensorndkbridge \
     libcamera_shim \
     Snap

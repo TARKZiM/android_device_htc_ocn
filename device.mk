@@ -294,7 +294,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     init.target.performance.rc \
-    ueventd.rc
+    ueventd.qcom.rc
 
 # Init Scripts
 PRODUCT_PACKAGES += \

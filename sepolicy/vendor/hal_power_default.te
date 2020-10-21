@@ -14,8 +14,3 @@ set_prop(hal_power_default, power_prop)
 allow hal_power_default cgroup:file read;
 
 allow hal_power_default sysfs:file { open read };
-
-allow hal_power_default debugfs_rpm:file { getattr } ;
-allow hal_power_default debugfs_rpm:file { open } ;
-allow hal_power_default debugfs_rpm:file { read } ;
-allow hal_power_default debugfs_wlan:dir { search } ;

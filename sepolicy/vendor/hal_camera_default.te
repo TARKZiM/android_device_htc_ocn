@@ -7,4 +7,3 @@ dontaudit hal_camera_default camera_data_file:dir search;
 dontaudit hal_camera_default debugfs:file { getattr open read };
 
 allow hal_camera_default default_prop:property_service { set } ;
-allow hal_camera_default sysfs_camera:dir { search } ;

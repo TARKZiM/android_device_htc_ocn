@@ -50,8 +50,6 @@ allow init audio_device:chr_file { ioctl } ;
 allow init audio_device:chr_file { open } ;
 allow init audio_device:chr_file { read write } ;
 allow init block_device:blk_file { write } ;
-allow init debugfs_rmt_storage:dir { relabelfrom } ;
-allow init debugfs_rmt_storage:file { relabelfrom } ;
 allow init device:chr_file { ioctl } ;
 allow init device:chr_file { open } ;
 allow init device:chr_file { read write } ;

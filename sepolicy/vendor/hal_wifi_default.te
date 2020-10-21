@@ -19,10 +19,3 @@ dontaudit hal_wifi_default self:capability sys_module;
 
 allow hal_wifi_default default_prop:property_service { set } ;
 allow hal_wifi_supplicant_default init:unix_dgram_socket { sendto } ;
-
-userdebug_or_eng(`
-# debugfs entries are only needed in user-debug or eng builds
-
-# Allow wifi hal to access wlan debugfs files and directories
-allow hal_wifi_default debugfs_wlan:dir r_dir_perms;
-')

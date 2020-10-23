@@ -186,8 +186,8 @@ PRODUCT_PACKAGES += \
     services-ext
 
 # Gestures
-#PRODUCT_PACKAGES += \
-#GestureHandler
+PRODUCT_PACKAGES += \
+GestureHandler
 
 # Display
 PRODUCT_PACKAGES += \

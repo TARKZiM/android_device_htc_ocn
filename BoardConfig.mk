@@ -221,8 +221,10 @@ JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.jav
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# Properties
+# Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+# PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Root
 BOARD_ROOT_EXTRA_FOLDERS := \

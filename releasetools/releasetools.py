@@ -15,11 +15,9 @@
 
 def FullOTA_InstallEnd(info):
   info.script.AppendExtra('if (getprop("ro.boot.mid") == "2PZC30000" || getprop("ro.boot.mid") == "2PZC40000") then')
+  info.script.Print("********")
   info.script.Print("This is a DS device - renaming radio props")
-  info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system_root");')
-  info.script.AppendExtra('rename("/system_root/system/vendor/lib64/libril-qc-ltedirectdisc.so.dugl", "/system_root/system/vendor/lib64/libril-qc-ltedirectdisc.so");')
-  info.script.AppendExtra('rename("/system_root/system/vendor/lib64/libril-qc-qmi-1.so.dugl", "/system_root/system/vendor/lib64/libril-qc-qmi-1.so");')
-  info.script.AppendExtra('rename("/system_root/system/vendor/lib64/libril-qc-radioconfig.so.dugl", "/system_root/system/vendor/lib64/libril-qc-radioconfig.so");')
-  info.script.AppendExtra('rename("/system_root/system/vendor/lib64/libril-qcril-hook-oem.so.dugl", "/system_root/system/vendor/lib64/libril-qcril-hook-oem.so");')
-  info.script.AppendExtra('unmount("/system_root");')
+  info.script.AppendExtra('run_program("/tmp/install/bin/variant_script.sh");')
+  info.script.Print("********")
+  info.script.Print("Renaming done.")
   info.script.AppendExtra('endif;')

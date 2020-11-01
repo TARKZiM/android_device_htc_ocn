@@ -91,7 +91,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
+    ro.charger.enable_suspend=true \
+    ro.charger.disable_init_blank=true
 
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -217,7 +218,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.ul_mode=5 \
     persist.data.wda.enable=true \
     persist.rmnet.data.enable=true \
-    persist.data.iwlan.enable=true 
+    persist.data.iwlan.enable=true
     
 # Sense
 PRODUCT_PROPERTY_OVERRIDES += \

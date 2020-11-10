@@ -22,3 +22,5 @@ allow tee fingerprintd_data_file:file create_file_perms;
 
 allow tee time_daemon:unix_stream_socket connectto;
 
+allow tee system_data_root_file:dir r_dir_perms;
+

@@ -1,6 +1,7 @@
 type sysfs_fps_attr, fs_type, sysfs_type;
 type nanohub_lock_file, file_type, data_file_type;
 type sysfs_nanoapp_cmd, fs_type, sysfs_type;
+type debugfs_rpm, fs_type, debugfs_type;
 type sysfs_wifi, fs_type, sysfs_type;
 type sensors_cal_file, file_type;
 #type debugfs_wlan, debugfs_type, fs_type;

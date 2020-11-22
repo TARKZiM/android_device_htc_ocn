@@ -324,7 +324,6 @@
     <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- Button backlight -->
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
     <integer name="config_buttonBrightnessSettingDefault">128</integer>
 
     <!-- Number of physical SIM slots on the device. This includes both eSIM and pSIM slots, and

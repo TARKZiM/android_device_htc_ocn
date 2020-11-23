@@ -175,18 +175,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
-    libqomx_core \
-    libmmjpeg_interface \
-    libmmcamera_interface \
     libsensorndkbridge \
     libcamera_shim \
     Snap
-
-# Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
 
 # Gestures
 PRODUCT_PACKAGES += \
@@ -202,25 +193,17 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.configstore@1.0-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    vendor.display.color@1.0-service \
-    vendor.display.color@1.0-impl \
     vendor.display.config@2.0 \
-    vendor.display.config@2.0_vendor \
     gralloc.msm8998 \
     hwcomposer.msm8998 \
     libhwc2on1adapter \
     memtrack.msm8998 \
     libdisplayconfig \
-    libdisplayconfig.qti \
-    libgenlock \
-    liboverlay \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system \
-    libqdMetaData.vendor \
     libvulkan
 
 PRODUCT_PACKAGES += \
@@ -245,16 +228,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprint.msm8998 \
-    fingerprintd
+    android.hardware.biometrics.fingerprint@2.1-service
 
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
+    libvndfwk_detect_jni.qti
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -269,9 +248,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     liblocation_api \
-    libloc_core \
-    libloc_pla \
-    libvehiclenetwork-native
+    libloc_core
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -295,11 +272,8 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
     libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    libhwbinder
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -380,7 +354,6 @@ PRODUCT_COPY_FILES += \
 # Minijail
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     libminijail
 
 # Native Public Libraries
@@ -411,7 +384,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libextmedia_jni \
     libhypv_intercept \
     libmm-omxcore \
     libOmxAacEnc \
@@ -505,10 +477,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
@@ -535,7 +503,6 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
     vndk-sp
 
 PRODUCT_COPY_FILES += \
@@ -553,9 +520,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libmediaextractorservice \
-    libnl \
-    libwfdaac_vendor \
-    libwfdaac
+    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
@@ -563,18 +528,14 @@ PRODUCT_BOOT_JARS += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
     hostapd \
     hostapd_cli \
     wificond \
-    wifilogd \
     libcld80211 \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant_wcn.conf \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \

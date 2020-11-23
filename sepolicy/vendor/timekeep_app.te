@@ -25,3 +25,8 @@ allow timekeep_app sysfs:file { getattr open read };
 
 # Set the persist.vendor.timeadjust property
 set_prop(timekeep_app, vendor_timekeep_prop)
+
+allow timekeep_app vendor_time_data_file:dir { search } ;
+allow timekeep_app vendor_time_data_file:file { getattr } ;
+allow timekeep_app vendor_time_data_file:file { open } ;
+allow timekeep_app vendor_time_data_file:file { write } ;

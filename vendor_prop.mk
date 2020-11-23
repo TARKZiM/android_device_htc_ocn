@@ -198,7 +198,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ro.baseband.arch=msm
+    ro.baseband.arch=msm \
+    persist.vendor.ims.dropset_feature=0
 
 # QCOM
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -270,7 +271,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.volte_enabled_by_hw=1
+    persist.volte_enabled_by_hw=1 \
+    persist.radio.calls.on.ims=1 \
+    service.qti.ims.enabled=1
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -110,27 +110,27 @@ vendor/etc/acdbdata/Handset_cal.acdb
 vendor/firmware/tas2557s_uCDSP.bin
 vendor/firmware/tas2557s_uCDSP_PG21.bin
 
-# Bluetooth from OP-8998
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/libbtnv.so|f987c402e05eaecfe43bd2626a0c9b1ebc068f76
-vendor/lib/libbt-hidlclient.so|23fad0ef6cd48502618c3381e923369f441e0c6e
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|44208f48bce10aba54227c0e50840aa106b4fa28
-vendor/lib64/libbtnv.so|11b97e25199558009e1df72bd002a97bb45fa8dc
-vendor/lib64/libbt-hidlclient.so|0fea38b7a4db63c759f3c962627596db601a14ec
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|07f0271c81a381125e53692e7d175141dc6e5d56
+# Bluetooth - from OP-8998
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9f0bbbbc45cd57eed0175c1ff06b83473ea5c392
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib/libbtnv.so|fff6c9fea01241f6459c2fe11b85a127bdb7b712
+vendor/lib/libbt-hidlclient.so|777ebc8e408071a3c8db32d80bc4f81b1390788f
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|e9840338a855d97ff81976cced37ee8e9730fa2e
+vendor/lib64/libbtnv.so|a37eef43cbac2be29281e1a6cbdcc14ca64c863c
+vendor/lib64/libbt-hidlclient.so|185432ad48e32b1f9d49a6b974f2a5e1ed1a355f
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|758254b82f17d788d9753bf68a116e287523e6d2
 
-# Bluetooth (ANT+) from OP-8998
--lib/com.qualcomm.qti.ant@1.0.so
--lib/libantradio.so
--lib64/com.qualcomm.qti.ant@1.0.so
--lib64/libantradio.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
+# Bluetooth (ANT+) - from OP-8998
+-lib/com.qualcomm.qti.ant@1.0.so|309d1d6981396c4698a62580c3f61fbefea78f3b
+-lib/libantradio.so|d41385a586a43d1c1ed1e315b65fa26bd2393411
+-lib64/com.qualcomm.qti.ant@1.0.so|29ecc1a9134dd2146f358e65c830059d3fa6c6d9
+-lib64/libantradio.so|68dd86841ef99508967f3bc28103bda402cee915
+vendor/lib/com.qualcomm.qti.ant@1.0.so|1fc2f795593d168c20b57131497569ddb81452e0
+vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|d1663e4c8fa3d01bd948b4adaa18f7654e1481c4
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|05e6190e6feb2f23b86e1ce4517b73712465bb2d
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|50056005be5fe5a8420599dd70e4266abf6a9866
 
-# Bluetooth (Audio) from OP-8998
+# Bluetooth (Audio) - from OP-8998
 lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 vendor/lib/vendor.qti.hardware.fm@1.0.so|cfa66eaded02ef69e2323fa070f2cb97aa718dd7
@@ -541,6 +541,16 @@ lib64/libvendorconn.so
 vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
+vendor/lib/com.quicinc.cne.api@1.0.so
+vendor/lib/com.quicinc.cne.constants@1.0.so
+vendor/lib/com.quicinc.cne.constants@2.0.so
+vendor/lib/com.quicinc.cne.server@1.0.so
+vendor/lib/com.quicinc.cne.server@2.0.so
+vendor/lib64/com.quicinc.cne.api@1.0.so
+vendor/lib64/com.quicinc.cne.constants@1.0.so
+vendor/lib64/com.quicinc.cne.constants@2.0.so
+vendor/lib64/com.quicinc.cne.server@1.0.so
+vendor/lib64/com.quicinc.cne.server@2.0.so
 
 # CPE firmware
 vendor/firmware/cpe_9340.b01
@@ -701,7 +711,7 @@ vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/lib_fpc_tac_shared.so
 vendor/lib64/lib_htc_fp_hal_util.so
 
-# Gatekeeper  from stock Pie
+# Gatekeeper from stock Pie
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
@@ -723,7 +733,6 @@ lib64/vendor.qti.gnss@1.1.so
 lib64/vendor.qti.gnss@2.0.so
 lib64/vendor.qti.gnss@2.1.so
 lib64/vendor.qti.gnss@1.0.so
-#-priv-app/com.qualcomm.location/com.qualcomm.location.apk|2b5999d87c4e93af0f8289e108c8580bafeb0bb9
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon
@@ -902,7 +911,7 @@ vendor/firmware/ipa_fws.b03
 vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 
-# IRQ balance - Mata
+# IRQ balance - from Mata
 vendor/bin/msm_irqbalance|9b2513151a5b3dc5f20893bc6b0bb0942185e5ab
 
 # Keystore from stock Pie
@@ -960,6 +969,10 @@ vendor/lib64/libperipheral_client.so
 # Power
 vendor/etc/powerhint.xml|c23d3a9d8d2ba3b1bbd09c272d75c7143ba17cd0
 
+# Protobuf-cpp-lite - from sunfish RP1A.200720.010
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so|e9c5b0cbf6d122994933b444b40eebfea79f8831
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|1c11443407566308d993c7b34cfd82370287074d
+
 # QMI
 vendor/bin/irsc_util
 etc/permissions/qti_permissions.xml
@@ -997,27 +1010,23 @@ vendor/lib64/libqmi.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
-# Radio qti-telephony-common | Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
+# Radio qti-telephony-common - from Xiaomi cmi qssi-user-11-RKQ1.200710.002-V12.1.2.0.RJACNXM
 system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0741f36
 
 # Radio
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|956a4017d0ba7f68e6d225e57b40d3b2bcbb4837
+etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml|cf740b4339659e7a30cabcd1c2fe5066e69b8760
+vendor/framework/qcrilhook.jar|66771d1f295a102dd5115c638f309057589c60a2
+framework/QtiTelephonyServicelibrary.jar:vendor/framework/QtiTelephonyServicelibrary.jar|d7cf75e44e12bedf1eb612460509394099cfd433
 -app/QtiTelephonyService/QtiTelephonyService.apk:vendor/app/QtiTelephonyService/QtiTelephonyService.apk|8e205bf2abb8d17f679cce354c6e849ec91b7563
+vendor/lib64/libsettings.so|fe6a5e08a97825c93224a39ad23386c79dba68f8
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
-etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml|cf740b4339659e7a30cabcd1c2fe5066e69b8760
-vendor/framework/qcrilhook.jar|66771d1f295a102dd5115c638f309057589c60a2
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|98bf31fc802d0e0a41b08cf900545f0e519dad4e
-framework/QtiTelephonyServicelibrary.jar:vendor/framework/QtiTelephonyServicelibrary.jar|d7cf75e44e12bedf1eb612460509394099cfd433
 vendor/bin/qti
-vendor/lib/com.quicinc.cne.api@1.0.so
-vendor/lib/com.quicinc.cne.constants@1.0.so
-vendor/lib/com.quicinc.cne.constants@2.0.so
-vendor/lib/com.quicinc.cne.server@1.0.so
-vendor/lib/com.quicinc.cne.server@2.0.so
 vendor/lib/libmdmdetect.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
@@ -1029,11 +1038,6 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
-vendor/lib64/com.quicinc.cne.api@1.0.so
-vendor/lib64/com.quicinc.cne.constants@1.0.so
-vendor/lib64/com.quicinc.cne.constants@2.0.so
-vendor/lib64/com.quicinc.cne.server@1.0.so
-vendor/lib64/com.quicinc.cne.server@2.0.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -1042,15 +1046,14 @@ vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libril-qc-ltedirectdisc.so.dugl|f369eef21a03718bed149269ad007d7feaa8c471
+vendor/lib64/libril-qc-ltedirectdisc.so.dugl
 vendor/lib64/libril-qc-qmi-1.so
-vendor/lib64/libril-qc-qmi-1.so.dugl|c68215d639b70cea2df72828382b2f1effb2b275
+vendor/lib64/libril-qc-qmi-1.so.dugl
 vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril-qc-radioconfig.so.dugl|f1cf4bf48504501c86aeec9143f400360f57f9dc
+vendor/lib64/libril-qc-radioconfig.so.dugl
 vendor/lib64/libril-qcril-hook-oem.so
-vendor/lib64/libril-qcril-hook-oem.so.dugl|5fd716b80e0fe3601ed81283d5bcec8986f15044
+vendor/lib64/libril-qcril-hook-oem.so.dugl
 vendor/lib64/librilqmiservices.so
-vendor/lib64/libsettings.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
@@ -1062,8 +1065,15 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
+# Radio - IMS - from daisy 10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
+-product/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
+product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
+product/lib64/libimsmedia_jni.so|3540752cc3658261ea3c909f03018eea4398f84e
+product/lib/libimsmedia_jni.so|8bea6e5b8333fa3337f400c0bb6cc0b3091aa51f
+product/lib/libimscamera_jni.so|432681e00d1074f1a8f08cb6e778ce24b8120662
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|54098d7c95453d662267d833b3639a7c92021a73
+
 # Radio - IMS
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 etc/permissions/qti-vzw-ims-internal.xml
 lib64/librcc.so
 lib/librcc.so
@@ -1080,18 +1090,13 @@ vendor/bin/imsqmidaemon
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsrcsd
--product/priv-app/ims/ims.apk
 vendor/framework/qti-vzw-ims-internal.jar
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-imsrcs-v2.so
 vendor/lib/lib-imsrcs-v2.so
 lib64/lib-imscamera.so
-product/lib64/libimscamera_jni.so
 lib64/lib-imsvtextutils.so
-product/lib64/libimsmedia_jni.so
-product/lib/libimsmedia_jni.so
 lib/lib-imscamera.so
-product/lib/libimscamera_jni.so
 lib/lib-imsvtextutils.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib/lib-imsdpl.so
@@ -1103,13 +1108,9 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
-lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpsl.so
 vendor/lib/lib-rtpdaemoninterface.so
-lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so
 vendor/lib64/lib-imscmservice.so
 vendor/lib/lib-imscmservice.so
 lib/com.qualcomm.qti.imscmservice@1.0.so
@@ -1173,14 +1174,14 @@ vendor/firmware/slpi_v2.b14
 vendor/firmware/slpi_v2.cfg
 vendor/firmware/slpi_v2.mdt
 
-# Thermal - Oneplus 5 (cheeseburger)
+# Thermal - from Oneplus 5 (cheeseburger)
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/bin/thermal-engine|95e0937ccc3f876c27772ca0f8086505c11dc927
 -vendor/lib/libthermalclient.so|4579096edb376b06827f8e90a49480cf121030f0
 -vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
 vendor/lib64/libthermalioctl.so|77e51147daac315cb37f59e707bba1ebbc785d87
 
-# Time services from OnePlus msm8998
+# Time services - from OnePlus msm8998
 -vendor/lib/libtime_genoff.so|a441c13dbb416f40ef1a5ce561c432b3e713d95d
 -vendor/lib64/libtime_genoff.so|5cbe121e2c47db348e5e034c7e702cd9494d6fd2
 
@@ -1205,8 +1206,6 @@ etc/wfdconfigsink.xml
 -framework/WfdCommon.jar
 lib/libFileMux.so
 lib/libmmparser_lite.so
-lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so
 lib/libOmxMux.so
 lib/libwfduibcsinkinterface.so
 lib/libwfdmminterface.so
@@ -1228,8 +1227,6 @@ lib/libwfdclient.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib64/libFileMux.so
 lib64/libmmparser_lite.so
-lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so
 lib64/libOmxMux.so
 lib64/libwfdnative.so
 lib64/libwfdclient.so
@@ -1269,12 +1266,11 @@ vendor/firmware/Data.msc
 vendor/firmware/modemuw.jsn
 
 # Widevine - from nile
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libcppf.so
+vendor/lib/mediadrm/libwvdrmengine.so|cf4c6af3f69a363ccccb7f70c31dad83265705a5
+vendor/lib/liboemcrypto.so|3299096b1b19430d63dfed24a58d04b015a210fe
 
 # Widevine - from coral-user-11-RP1A.200720.009-6720564
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
-vendor/lib/libwvhidl.so
-vendor/lib64/libwvhidl.so
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+vendor/lib/libwvhidl.so|0c10b5b2fa968420ea496aa5c9603ce36c706961
+vendor/lib64/libwvhidl.so|68d257f6c4b409f71f80c231789d9951f71308a8

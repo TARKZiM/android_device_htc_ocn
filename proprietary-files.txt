@@ -135,17 +135,9 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|cfa66eaded02ef69e2323fa070f2cb97aa718dd
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|db3afdb3dcc6e39effed66e6397131a1dafd86a1
 
 # Bluetooth (Audio)
-vendor/bin/btnvtool
-vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
 vendor/firmware/crbtfw21.tlv
 vendor/firmware/crnv21.bin
-
-# Bluetooth (Audio) from stock Pie
-lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
-lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 
 # Camera from stock P 3.34.401.1
 bin/mm-qcamera-daemon

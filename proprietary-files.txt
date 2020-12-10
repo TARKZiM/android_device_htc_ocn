@@ -92,8 +92,6 @@ vendor/etc/TAS2557_B.ftcfg
 etc/TFA_default_vol_level.conf
 vendor/firmware/Data.msc
 vendor/firmware/wdspver.cfg
-vendor/lib/hw/sound_trigger.primary.msm8998.so
-vendor/lib/libsmwrapper.so
 
 # Audio ACBD
 vendor/etc/acdbdata/Hdmi_cal.acdb
@@ -925,6 +923,14 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterdeviceutils.so
+
+# Listen - from Pie stock
+vendor/lib/hw/sound_trigger.primary.msm8998.so|63523f1c42ce2010ffdb050dc6154bcb68bef150
+lib/liblistenjni.so:vendor/lib/liblistenjni.so|f73c48877ac1b44fc1dd2d0036273ce1a22dd3eb
+lib/liblistensoundmodel2.so:vendor/lib/liblistensoundmodel2.so|d1792ba8d2678cd05963aca6e89f4d156870eb0b
+vendor/lib/libadpcmdec.so|7c12a153200fd2e9f1f6139fcf40beee1a96f48d
+vendor/lib/libmulawdec.so|39e9f569c181e42719e713f856c183f1857cd41e
+vendor/lib/libsmwrapper.so|151c94af482373a824dfd65c4a4199a74bfc4e7f
 
 # Media
 -vendor/lib/libgpustats.so

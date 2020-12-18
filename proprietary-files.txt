@@ -1260,6 +1260,10 @@ vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 
+# Wi-Fi Display - from stock Pie
+lib/libmediaextractor.so|0d7d0363e28f474c382a9c88297d8e71741b8c43
+lib64/libmediaextractor.so|db4d7eec3a95f003d31053c2f8d534b34efe92a7
+
 # Wifi
 vendor/bin/cnss-daemon
 vendor/firmware/wlanmdsp.mbn

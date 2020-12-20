@@ -1195,6 +1195,10 @@ vendor/firmware/venus.mdt
 #vendor/lib/hw/vr.msm8998.so
 #vendor/lib64/hw/vr.msm8998.so
 
+# Wi-Fi Display - from LA.UM.9.6.2.r1-03300-89xx.0 (patched)
+lib/libwfdnative.so|e45ab6d707dac1f0ada8099f6eddebb682552954
+lib64/libwfdnative.so|fcea3ccd064171ddd9c2d7ce7bc38df324003937
+
 # Wi-Fi Display - from LA.UM.9.6.2.r1-03300-89xx.0
 -framework/WfdCommon.jar|0faa0fdf415b1ecdc92dfe6a52946a3248b7b02b
 -priv-app/WfdService/WfdService.apk|b99c24571581465e637c7f6a6efc7c36042e56ea
@@ -1214,7 +1218,6 @@ lib/libwfddisplayconfig.so|f06b58228ea5fc570ad0403be5db4a4f8e11f108
 lib/libwfdmminterface.so|668c1fa38a6d94ae36d74cdf8e3e538de41425fc
 lib/libwfdmmsink.so|d5a5ef1490c8a7a84b6ea034afd02efef0950336
 lib/libwfdmmsrc.so|cf8f8a63d2474a339d56471d745c572c14c0cb49
-lib/libwfdnative.so|ba926c39a6b5c6a60c1d4f65e9629eb719bafee0
 lib/libwfdrtsp.so|ff172aaf2df1d5ea4da247bc1af16d68304c7389
 lib/libwfdservice.so|72d7cd551a87067432fc41e7fa625b2c7a0f5307
 lib/libwfdsm.so|321574cd208df53116ea4b7c2f0fbd53c6595f28
@@ -1226,7 +1229,6 @@ lib/libwfduibcsrcinterface.so|fe8a2158155db35651f0e1ad834e000ca3e27247
 lib64/libFileMux.so|901bdfe106d04863e3abfa36e1b6a366ccfe4246
 lib64/libOmxMux.so|fd74e3f31264f45911e79e45c29a8a438e303f74
 lib64/libwfdclient.so|089cca2d14ec6df309934626bd822722a3232dc8
-lib64/libwfdnative.so|fcea3ccd064171ddd9c2d7ce7bc38df324003937
 system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
 system_ext/lib/libmmparser_lite.so|c15126ec35cd6f484ffcf170a87ccde009d40645
 system_ext/lib/libmmrtpdecoder.so|a990ab20d1c970c827b8e12fe377c4965da7b7f5

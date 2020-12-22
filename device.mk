@@ -221,7 +221,8 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libtinyxml \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libqdMetaData.vendor
 
 PRODUCT_PACKAGES += \
     qdcm_calib_data_WQHD_JDI_S6D1HA2_5.5_command_mode_panel.xml
@@ -409,8 +410,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl \
     libc2dcolorconvert \
     libextmedia_jni \
     libhypv_intercept \
@@ -423,6 +422,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
+    libstagefright_enc_common \
     libstagefrighthw
 
 # Power

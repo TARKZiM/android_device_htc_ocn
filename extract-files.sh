@@ -64,19 +64,19 @@ fi
 function blob_fixup() {
     case "${1}" in
     vendor/lib/libwvhidl.so)
-        patchelf --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v28.so" "${2}"
     ;;
     vendor/lib64/libwvhidl.so)
-        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
     ;;
     vendor/lib64/libsettings.so)
-        patchelf --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
     ;;
 #    lib/libwfdnative.so | lib64/libwfdnative.so )
-#        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+#        "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
 #    ;;
 #    lib64/libwfdnative.so)
-#        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+#        "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
 #        ;;
     esac
 }

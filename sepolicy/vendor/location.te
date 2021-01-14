@@ -7,3 +7,10 @@ allow location location:socket { read } ;
 allow location location:socket { write } ;
 allow location sysfs:file { open } ;
 allow location sysfs:file { read } ;
+
+allow location self:capability { net_raw };
+set_prop(location, diag_prop)
+
+allow location hal_cacert_hwservice:hwservice_manager { find };
+
+binder_call(location, qtidataservices_app);

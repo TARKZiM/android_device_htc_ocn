@@ -214,6 +214,7 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     memtrack.msm8998 \
     libdisplayconfig \
+    libdisplayconfig.qti \
     libgenlock \
     liboverlay \
     libtinyxml \
@@ -376,9 +377,9 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
-    libavservices_minijail_32 \
-    libavservices_minijail.vendor
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libminijail
 
 # Native Public Libraries
 PRODUCT_COPY_FILES += \

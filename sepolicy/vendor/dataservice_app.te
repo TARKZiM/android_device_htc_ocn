@@ -1,2 +1,6 @@
 allow vendor_dataservice_app hal_cne_hwservice:hwservice_manager find;
 allow qtidataservices_app self:socket create_socket_perms;
+
+allow vendor_dataservice_app cgroup:file w_file_perms;
+allow vendor_dataservice_app system_app_data_file:dir create_dir_perms;
+allow vendor_dataservice_app system_app_data_file:file create_file_perms;

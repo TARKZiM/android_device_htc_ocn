@@ -238,6 +238,7 @@ TARGET_LD_SHIM_LIBS :=  \
     /vendor/lib/hw/camera.msm8998.so|libcamera_shim.so \
     /system/lib64/lib-imsvideocodec.so|libims_shim.so \
     /vendor/bin/imsrcsd|libbase_shim.so \
+    /system/vendor/lib64/lib-uceservice.so|libbase_shim.so \
     /system/product/lib64/libdpmframework.so|libcutils_shim.so
 
 # Qualcomm

@@ -106,7 +106,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.iwlan.enable=true \
-    persist.data.mode=concurrent
+    persist.data.mode=concurrent \
+    persist.vendor.radio.data_con_rprt=1
 
 # Dalvik dex2oat
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -203,7 +204,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.baseband.arch=msm \
-    persist.vendor.ims.dropset_feature=0
+    persist.vendor.ims.dropset_feature=0 \
+    persist.radio.rat_on=combine \
+    persist.radio.data_ltd_sys_ind=1 \
+    persist.radio.data_con_rprt=1
+	
+# RCS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rcs.supported=1
 
 # QCOM
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
@@ -223,7 +231,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.ul_mode=5 \
     persist.data.wda.enable=true \
     persist.rmnet.data.enable=true \
-    persist.data.iwlan.enable=true
+    persist.data.iwlan.enable=true \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1
     
 # Sense
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -282,7 +292,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.wfc_avail_ovr=1 \
     persist.volte_enabled_by_hw=1 \
     persist.radio.calls.on.ims=1 \
-    service.qti.ims.enabled=1
+    service.qti.ims.enabled=1 \
+    persist.radio.VT_CAM_INTERFACE=1 \
+    persist.radio.volte.dan_support=true \
+    persist.sys.cust.lte_config=true
 
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \

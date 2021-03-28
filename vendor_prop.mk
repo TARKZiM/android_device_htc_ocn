@@ -83,6 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.disabled=true \
     persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    persist.bt.enableAptXHD=true \
     ro.bluetooth.a2dp_offload.supported=true
 
 # Camera

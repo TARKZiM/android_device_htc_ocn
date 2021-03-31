@@ -77,12 +77,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.bt.bdaddr_path=/sys/module/htc_bdaddress/parameters/bdaddress \
     ro.bt.ble_tag=1 \
     ro.qc.bluetooth.stack=bluedroid \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.bluetooth.avrcpversion = avrcp15 \
     persist.vendor.btstack.enable.splita2dp=false \
     persist.bluetooth.a2dp_offload.disabled=true \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
     persist.bt.enableAptXHD=true \
     ro.bluetooth.a2dp_offload.supported=true
 

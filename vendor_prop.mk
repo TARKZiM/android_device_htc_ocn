@@ -261,7 +261,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
-    ro.telephony.use_old_mnc_mcc_format=true \
     telephony.lteOnCdmaDevice=0
 
 # SurfaceFlinger

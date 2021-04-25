@@ -21,8 +21,8 @@ allow priv_app boottime_prop:file { getattr } ;
 allow priv_app boottime_prop:file { open } ;
 allow priv_app bpf_progs_loaded_prop:file { getattr } ;
 allow priv_app bpf_progs_loaded_prop:file { open } ;
-allow priv_app bservice_prop:file { open } ;
+allow priv_app vendor_bservice_prop:file { open } ;
 
-allow priv_app bservice_prop:file { getattr } ;
-allow priv_app cnd_vendor_prop:file { getattr } ;
-allow priv_app cnd_vendor_prop:file { open } ;
+allow priv_app vendor_bservice_prop:file { getattr } ;
+allow priv_app vendor_cnd_vendor_prop:file { getattr } ;
+allow priv_app vendor_cnd_vendor_prop:file { open } ;

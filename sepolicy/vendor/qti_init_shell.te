@@ -5,5 +5,5 @@ allow qti_init_shell fingerprint_prop:property_service set;
 allow qti_init_shell bluetooth_data_file:file r_file_perms;
 allow qti_init_shell hci_attach_dev:chr_file rw_file_perms;
 
-allow qti_init_shell freq_prop:property_service { set } ;
+allow qti_init_shell vendor_freq_prop:property_service { set } ;
 allow qti_init_shell sysfs:file { setattr } ;

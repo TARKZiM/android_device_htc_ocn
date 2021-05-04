@@ -12,10 +12,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="gesture_screen_off_title">锁屏手势</string>
-    <string name="gesture_edge_sense_title">Edge Sense 边框触控</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="gesture_screen_off_title">HTC锁屏手势</string>
+    <string name="gesture_edge_sense_title">HTC边框触控</string>
     <string name="style_summary">手势预览</string>
 
     <!-- Gestures: Touchscreen gestures -->
@@ -46,11 +46,11 @@
 
     <!-- Action Strings -->
     <string name="action_dialog_title">手势动作</string>
-    <string name="action_do_nothing">什么都不做</string>
+    <string name="action_do_nothing">无</string>
     <string name="action_flashlight">切换手电筒</string>
     <string name="action_camera">打开相机</string>
     <string name="action_browser">打开浏览器</string>
-    <string name="action_dialer">打开拨号器</string>
+    <string name="action_dialer">打开电话</string>
     <string name="action_email">查看邮件</string>
     <string name="action_messages">查看信息</string>
     <string name="action_play_pause_music">播放/暂停播放</string>
@@ -58,8 +58,7 @@
     <string name="action_next_track">切换下一曲</string>
     <string name="action_volume_down">降低音量</string>
     <string name="action_volume_up">提高音量</string>
-    <string name="action_take_screenshot">截取屏幕</string>
+    <string name="action_take_screenshot">屏幕截图</string>
     <string name="action_turn_screen_on_off">打开/关闭屏幕</string>
-    <string name="action_doze">触发环境显示</string>
 
 </resources>

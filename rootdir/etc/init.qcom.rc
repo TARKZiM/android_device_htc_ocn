@@ -992,7 +992,7 @@ service vendor.cnd /vendor/bin/cnd
     class main
     user system
     group system wifi inet radio wakelock net_admin
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.dpmQmiMgr /vendor/bin/dpmQmiMgr
     class main
@@ -1003,7 +1003,7 @@ service vendor.irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.rmt_storage /vendor/bin/rmt_storage
     class core
@@ -1041,7 +1041,7 @@ service vendor.hci_filter_root /vendor/bin/wcnss_filter
     group bluetooth diag system
     seclabel u:r:wcnss_filter:s0
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service bt-dun /system/bin/dun-server /dev/smd7 /dev/rfcomm0
     class late_start
@@ -1084,7 +1084,7 @@ service vendor.port-bridge /vendor/bin/port-bridge
     group radio system inet
     disabled
     oneshot
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service qmiproxy /system/bin/qmiproxy
     class main
@@ -1104,21 +1104,21 @@ service vendor.qmuxd /vendor/bin/qmuxd
 service vendor.netmgrd /vendor/bin/netmgrd
     class main
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.ipacm /vendor/bin/ipacm
     class main
     user radio
     group radio inet
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.qti /vendor/bin/qti
     class main
     user radio
     group radio oem_2901 diag usb net_admin
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.dataadpl /vendor/bin/adpl
     class main
@@ -1181,7 +1181,7 @@ service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:sys.shutdown.requested=*
     stop vendor.cnss-daemon
@@ -1234,7 +1234,7 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
     group gps inet diag wifi
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:crypto.driver.load=1
      insmod /system/lib/modules/qce.ko
@@ -1271,7 +1271,7 @@ service vendor.qvop-daemon /vendor/bin/qvop-daemon
     user system
     group system drmrpc
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
@@ -1381,7 +1381,7 @@ service vendor.energy-awareness /vendor/bin/energy-awareness
     user root
     group system
     oneshot
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 # service for USERDEBUG
 service vendor.LKCore-dbg /vendor/bin/LKCore

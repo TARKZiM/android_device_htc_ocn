@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2013-2016 The CyanogenMod Project
+               (C) 2017 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="gesture_screen_off_title">HTC鎖屏手勢</string>
+    <string name="gesture_edge_sense_title">HTC Edge Sense</string>
+    <string name="style_summary">手勢預覽</string>
+
+    <!-- Gestures: Touchscreen gestures -->
+    <string name="touchscreen_gestures_haptic_feedback_title">觸控震動</string>
+    <string name="touchscreen_gestures_haptic_feedback_summary">檢測到觸控螢幕手勢時振動</string>
+    <string name="touchscreen_gestures_display_title">觸屏手勢設定</string>
+    <string name="touchscreen_swipe_up_title">用一根手指向上滑動</string>
+    <string name="touchscreen_double_swipe_down_title">用一根手指雙次向下滑动</string>
+    <string name="touchscreen_swipe_left_title">用一根手指向左滑動</string>
+    <string name="touchscreen_swipe_right_title">用一根手指向右滑動</string>
+
+    <!-- Squeeze Gesture Strings -->
+    <string name="squeeze_display_title">握壓手勢設定</string>
+    <string name="squeeze_enabled_title">握壓手勢開啟</string>
+    <string name="squeeze_short_title">自訂短握壓動作</string>
+    <string name="squeeze_long_title">自訂長握壓動作</string>
+    <string name="squeeze_gestures_enabled">啟用握壓手勢</string>
+    <string name="squeeze_gestures_disabled">禁用握壓手勢</string>
+    <string name="squeeze_long_activation_time">長握壓觸发時間</string>
+    <string name="squeeze_force_title">握壓力道等級</string>
+    <string name="squeeze_force_summary">調整握壓力道等級</string>
+    <string name="squeeze_advanced_settings_title">握壓進階設定</string>
+    <string name="squeeze_haptic_ignore_ringer_title">觸覺反饋忽略呼叫模式</string>
+    <string name="squeeze_haptic_ignore_ringer_summary">觸覺反饋发生時忽略振鈴模式</string>
+    <string name="squeeze_gestures_activated">觸发握壓手勢時振動</string>
+    <string name="squeeze_gestures_screen_off_activated">觸发鎖屏手勢時振動</string>
+
+    <!-- Action Strings -->
+    <string name="action_dialog_title">手勢動作</string>
+    <string name="action_do_nothing">不執行任何動作</string>
+    <string name="action_flashlight">切換至手電筒</string>
+    <string name="action_camera">開啟相機</string>
+    <string name="action_browser">開啟瀏覽器</string>
+    <string name="action_dialer">開啟撥號程式</string>
+    <string name="action_email">檢視您的電子郵件</string>
+    <string name="action_messages">檢視您的訊息</string>
+    <string name="action_play_pause_music">播放/暫停播放</string>
+    <string name="action_previous_track">切換上一曲</string>
+    <string name="action_next_track">切換下一曲</string>
+    <string name="action_volume_down">降低音量</string>
+    <string name="action_volume_up">提高音量</string>
+    <string name="action_take_screenshot">撷取熒幕畫面</string>
+    <string name="action_turn_screen_on_off">開啟/關閉屏幕</string>
+
+</resources>

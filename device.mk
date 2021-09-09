@@ -521,12 +521,6 @@ PRODUCT_COPY_FILES += \
 #    android.hardware.vr@1.0-service \
 #    vr.msm8998
 
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libmediaextractorservice \
-    libnl
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \

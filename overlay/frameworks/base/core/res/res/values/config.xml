@@ -151,6 +151,7 @@
            audio output to the WiFi display encoder in the media server.
          * The remote submix module "audio.r_submix.default" must be installed on the device.
          * The device must be provisioned with HDCP keys (for protected content).
+         -- AOSP WFD --
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
@@ -364,8 +365,5 @@
         <!-- ID0:Fingerprint:Strong -->
         <item>0:2:15</item>
     </string-array>
-
-    <!-- AOSP WFD -->
-    <bool name="config_enableWifiDisplay">true</bool>
 
 </resources>

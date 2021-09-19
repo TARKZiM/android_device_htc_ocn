@@ -1385,6 +1385,7 @@
 
     <path name="audio-record">
         <ctl name="MultiMedia1 Mixer SLIM_0_TX" value="1" />
+        <ctl name="DEC7 Volume" value="102"/>
     </path>
 
     <path name="audio-record usb-headset-mic">
@@ -1406,6 +1407,7 @@
 
     <path name="audio-record-compress">
         <ctl name="MultiMedia8 Mixer SLIM_0_TX" value="1" />
+        <ctl name="DEC7 Volume" value="102"/>
     </path>
 
     <path name="audio-record-compress bt-sco">
@@ -2725,6 +2727,7 @@
     <!-- VoIP Tx settings -->
     <path name="audio-record-voip">
         <ctl name="MultiMedia10 Mixer SLIM_0_TX" value="1" />
+        <ctl name="DEC7 Volume" value="102"/>
     </path>
 
     <path name="audio-record-voip usb-headset-mic">

@@ -18,14 +18,15 @@
 package org.lineageos.settings.device;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class EdgeSenseSettingsActivity extends PreferenceActivity {
+public class EdgeSenseSettingsActivity extends CollapsingToolbarBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentManager().beginTransaction()
-            .replace(android.R.id.content, new EdgeSenseSettingsFragment()).commit();
+            .replace(R.id.content_frame, new EdgeSenseSettingsFragment()).commit();
     }
 }

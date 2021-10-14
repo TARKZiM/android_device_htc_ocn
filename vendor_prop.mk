@@ -87,6 +87,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.bt.enableAptXHD=true \
     ro.bluetooth.a2dp_offload.supported=true
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.tuning_spec=htc \

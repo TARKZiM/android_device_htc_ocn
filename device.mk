@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     libsensorndkbridge \
     libcamera_shim \
-    Snap
+    Aperture
 
 # Gestures
 PRODUCT_PACKAGES += \

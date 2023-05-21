@@ -18,10 +18,6 @@ BOARD_VENDOR := htc
 
 DEVICE_PATH := device/htc/ocn
 
-# Android R: Disable logic for new vendor_boot
-# Our devices do not support it
-TARGET_NO_VENDOR_BOOT := true
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
@@ -256,7 +252,7 @@ VENDOR_SECURITY_PATCH := 2018-11-01
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sensors

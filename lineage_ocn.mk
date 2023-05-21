@@ -17,6 +17,8 @@
 # Release name
 PRODUCT_RELEASE_NAME := ocn
 
+PRODUCT_BUILD_VENDOR_BOOT_IMAGE := false
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 

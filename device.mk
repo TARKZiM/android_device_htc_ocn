@@ -268,7 +268,6 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 # hidl base, or8 props still depend on it
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhwbinder

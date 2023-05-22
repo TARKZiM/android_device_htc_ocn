@@ -437,6 +437,10 @@
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IKeyDisabler</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>

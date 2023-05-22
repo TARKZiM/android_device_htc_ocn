@@ -20,20 +20,29 @@
 #include <hidl/HidlTransportSupport.h>
 
 #include "GloveMode.h"
+#include "KeyDisabler.h"
 
 using ::android::OK;
 using ::android::sp;
 
 using ::vendor::lineage::touch::V1_0::IGloveMode;
+using ::vendor::lineage::touch::V1_0::IKeyDisabler;
 using ::vendor::lineage::touch::V1_0::implementation::GloveMode;
+using ::vendor::lineage::touch::V1_0::implementation::KeyDisabler;
 
 int main() {
     sp<IGloveMode> gloveMode = new GloveMode();
+    sp<IKeyDisabler> keyDisabler = new KeyDisabler();
 
     android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
 
     if (gloveMode->registerAsService() != OK) {
         LOG(ERROR) << "Cannot register glove mode HAL service.";
+        return 1;
+    }
+
+    if (keyDisabler->registerAsService() != OK) {
+        LOG(ERROR) << "Cannot register keydisabler HAL service.";
         return 1;
     }
 

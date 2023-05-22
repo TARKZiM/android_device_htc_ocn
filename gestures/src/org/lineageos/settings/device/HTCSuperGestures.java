@@ -122,7 +122,7 @@ public abstract class HTCSuperGestures extends Service {
     }
 
     protected void launchCamera() {
-        final Intent intent = new Intent(Intent.ACTION_SCREEN_CAMERA_GESTURE);
+        final Intent intent = new Intent(lineageos.content.Intent.ACTION_SCREEN_CAMERA_GESTURE);
         mContext.sendBroadcastAsUser(intent, UserHandle.CURRENT,
                 Manifest.permission.STATUS_BAR_SERVICE);
     }

@@ -496,7 +496,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic \
+    android.hardware.usb@1.0-service \
     com.android.future.usb.accessory
 
 # Vibrator

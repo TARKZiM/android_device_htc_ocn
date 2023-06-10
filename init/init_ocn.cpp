@@ -46,6 +46,7 @@
 #include "htc-emeads.h"
 #include "htc-asiads.h"
 #include "htc-indiads.h"
+#include "htc-japan.h"
 #include "htc-chinads.h"
 #include "htc-unlocked.h"
 
@@ -137,10 +138,7 @@ void vendor_load_properties()
         property_override_dual("ro.product.device", "ro.vendor.product.device", "htc_ocnuhljapan");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "601HT");
         //property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "");
-        //load_properties(htc_japan_properties);
-        /*
-         *   TODO: get their properties
-         */
+        load_properties(htc_japan_properties);
     } else if (bootmid == "2PZC30000") {
         property_override_dual("ro.product.device", "ro.vendor.product.device", "htc_ocndugl");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "HTC U11");

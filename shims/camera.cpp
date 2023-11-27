@@ -30,10 +30,10 @@ extern "C" void _ZN7android13GraphicBuffer4lockEjPPv() {}
 extern "C" void _ZN7android20CameraParameters_EXTC1EPNS_16CameraParametersE() {}
 extern "C" void _ZN7android21SurfaceComposerClient13createSurfaceERKNS_7String8EjjijPNS_14SurfaceControlEii() {}
 
-extern "C" void _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(void);
+//extern "C" void _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(void);
 
 extern "C" void _ZN7android21SurfaceComposerClient14getDisplayInfoERKNS_2spINS_7IBinderEEEPNS_11DisplayInfoE(void) {
-  _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE();
+  //_ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE();
  }
 
 extern "C" void _ZN7android14SurfaceControl10getSurfaceEv(void);

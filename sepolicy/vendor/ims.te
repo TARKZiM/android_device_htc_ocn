@@ -1,2 +1,1 @@
-diag_use(ims)
 get_prop(ims, diag_prop)

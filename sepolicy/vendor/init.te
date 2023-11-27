@@ -11,7 +11,7 @@ allow init hidl_base_hwservice:hwservice_manager add;
 # Allow init to chown/chmod on pseudo files in /sys
 allow init sysfs_type:file { open read write setattr };
 
-allow init { netd domain tzdatacheck vendor_init ueventd tee fsck lmkd crash_dump }:process noatsecure;
+allow init { netd domain vendor_init ueventd tee fsck lmkd crash_dump }:process noatsecure;
 
 dontaudit init kernel:system module_request;
 

@@ -244,7 +244,8 @@ PRODUCT_PACKAGES += \
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    libion.vendor
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -277,6 +278,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.manager@1.0 \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhwbinder
 
@@ -432,6 +434,8 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
